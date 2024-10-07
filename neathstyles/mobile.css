@@ -1,177 +1,127 @@
-/* mobile.css */
-
-/* Reset some default styles */
+/* General Reset */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    line-height: 1.5;
+    background-color: #f4f4f4; /* Light background for contrast */
 }
 
-.header {
-    background-color: #4CAF50; /* Green header */
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    max-width: 50px;
-    margin-right: 10px;
-}
-
-.company-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.contact-info {
-    margin-top: 10px;
-}
-
-.phone-number {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-a {
-    color: #4CAF50; /* Green links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.navigation {
-    background-color: #2196F3; /* Blue navigation */
-    padding: 10px 0;
-}
-
-.navigation ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navigation li {
-    flex: 1;
-    text-align: center;
-}
-
-.navigation a {
-    color: white;
-    padding: 10px;
-}
-
-.navigation a:hover {
-    background-color: #1976D2; /* Darker blue on hover */
-}
-
+/* Hero Section */
 .hero {
-    background-color: #FFEB3B; /* Yellow hero section */
+    background-color: #3498db;
+    color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero h1 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    margin: 10px 0;
 }
 
 .hero p {
     margin: 10px 0;
+    font-size: 1em; /* Slightly smaller font for better readability */
 }
 
-.btn {
-    display: inline-block;
-    background-color: #FF9800; /* Orange buttons */
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin: 10px 0;
+.hero .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-.btn:hover {
-    background-color: #FB8C00; /* Darker orange on hover */
-}
-
-.left-image,
-.right-image {
-    display: block;
+.hero .left-image, .hero .right-image {
+    width: 45%;
+    margin: 0 2.5%;
     max-width: 100%;
-    margin: 10px auto;
 }
 
-.welcome,
-.services,
-.areas,
-.contact {
-    background-color: #E3F2FD; /* Light blue for sections */
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
+@media (max-width: 600px) {
+    .hero .left-image, .hero .right-image {
+        width: 90%; /* Full width for smaller screens */
+        margin: 5px 0; /* Reduce margin */
+    }
 }
 
-.welcome h2,
-.services h2,
-.areas h2,
-.contact h2 {
-    color: #1976D2; /* Dark blue section headers */
-}
-
-.call-to-action {
-    background-color: #C8E6C9; /* Light green for call to action */
-    padding: 15px;
-    border-radius: 5px;
+/* Navigation */
+nav {
+    background-color: #34495e;
+    padding: 10px;
     text-align: center;
 }
 
-.call-to-action h3 {
-    color: #388E3C; /* Dark green for call to action headers */
+nav ul {
+    list-style-type: none;
 }
 
-.advert {
-    background-color: #FFCCBC; /* Light orange for advert section */
+nav ul li {
+    display: inline; /* Horizontal menu */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
     padding: 15px;
-    border-radius: 5px;
 }
 
-.video-container {
-    margin: 10px auto;
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
 }
 
+p {
+    margin: 10px 0;
+}
+
+/* Images */
+img {
+    width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer */
 footer {
-    background-color: #4CAF50; /* Green footer */
+    background-color: #34495e;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
-.floating-call-button {
+footer p {
+    margin: 5px 0;
+}
+
+/* Floating Phone Number */
+.floating-phone {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #FF5722; /* Bright red for floating button */
+    background-color: #e74c3c;
     color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 5px;
     text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-.floating-call-button:hover {
-    background-color: #E64A19; /* Darker red on hover */
+.floating-phone a {
+    color: white;
+    text-decoration: none;
 }
