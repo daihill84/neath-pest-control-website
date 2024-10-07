@@ -1,84 +1,177 @@
 /* mobile.css */
 
-/* General Mobile Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* Header Mobile Styles */
 .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 .logo-container {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 10px;
 }
 
 .company-name {
-    font-size: 28px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.phone-number, #email {
-    font-size: 14px;
+.contact-info {
+    margin-top: 10px;
 }
 
-/* Navigation Mobile Styles */
+.phone-number {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a {
+    color: #4CAF50; /* Green links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    background-color: #2196F3; /* Blue navigation */
+    padding: 10px 0;
+}
+
 .navigation ul {
-    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navigation li {
-    display: block;
-    margin: 10px 0;
+    flex: 1;
+    text-align: center;
 }
 
-/* Hero Section Mobile Styles */
+.navigation a {
+    color: white;
+    padding: 10px;
+}
+
+.navigation a:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
 .hero {
-    padding: 30px 15px;
-    font-size: 22px;
+    background-color: #FFEB3B; /* Yellow hero section */
+    padding: 20px;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 24px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 18px;
+    margin: 10px 0;
 }
 
-/* Image Layout for Mobile */
-.image-container {
-    flex-direction: column;
-    align-items: center;
+.btn {
+    display: inline-block;
+    background-color: #FF9800; /* Orange buttons */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
 }
 
-.left-image, .right-image {
-    text-align: center;
-    margin-bottom: 20px;
+.btn:hover {
+    background-color: #FB8C00; /* Darker orange on hover */
 }
 
-/* Floating Call Button for Mobile */
-.floating-call-button {
-    bottom: 10px;
-    right: 10px;
-    padding: 15px 25px;
-    font-size: 18px;
+.left-image,
+.right-image {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
 }
 
-/* Section Mobile Styles */
-section {
-    padding: 30px 15px;
-    font-size: 24px;
-}
-
-/* Footer Mobile Styles */
-.footer {
+.welcome,
+.services,
+.areas,
+.contact {
+    background-color: #E3F2FD; /* Light blue for sections */
     padding: 15px;
-    font-size: 14px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.welcome h2,
+.services h2,
+.areas h2,
+.contact h2 {
+    color: #1976D2; /* Dark blue section headers */
+}
+
+.call-to-action {
+    background-color: #C8E6C9; /* Light green for call to action */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.call-to-action h3 {
+    color: #388E3C; /* Dark green for call to action headers */
+}
+
+.advert {
+    background-color: #FFCCBC; /* Light orange for advert section */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.video-container {
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #4CAF50; /* Green footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.floating-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF5722; /* Bright red for floating button */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.floating-call-button:hover {
+    background-color: #E64A19; /* Darker red on hover */
 }
