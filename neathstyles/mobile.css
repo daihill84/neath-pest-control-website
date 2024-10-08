@@ -1,86 +1,174 @@
-/* General Body Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Hero Section Styles */
-.hero {
-    position: relative;
-    padding: 20px;
-    overflow: hidden; /* Prevent overflow */
-    background-color: #f5f5f5; /* Optional: Add background color */
+/* Header styles */
+.header {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-.hero-container {
+.logo-container {
     display: flex;
-    flex-direction: column; /* Column layout for mobile */
-    align-items: center; /* Center align content */
-    text-align: center; /* Center text */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.hero-content {
-    z-index: 1; /* Ensure text is above the images */
-    position: relative; /* Position relative for layering */
-    margin-bottom: 20px; /* Add space between text and images */
+.logo {
+    width: 80%;
+    max-width: 200px;
 }
 
-h1 {
-    font-size: 1.8em; /* Responsive heading size */
-    margin: 0.5em 0; /* Margin around heading */
+.company-name {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
-p {
-    font-size: 1em; /* Base font size for paragraphs */
-    margin: 0.5em 0; /* Margin around paragraphs */
+/* Navigation styles */
+.navigation {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    background: #e2e2e2;
+    padding: 20px 10px;
+}
+
+.hero h1 {
+    font-size: 1.8em;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+/* Button styles */
 .btn {
-    background-color: #007bff; /* Button color */
-    color: white; /* Button text color */
-    padding: 10px 15px; /* Button padding */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    margin: 5px 0; /* Margin around buttons */
+    background: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
 }
 
+.btn:hover {
+    background: #ff1a1a;
+}
+
+/* Sections styles */
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+/* Image styles */
 .image-container {
     display: flex;
-    justify-content: center; /* Center images horizontally */
-    position: relative; /* Relative positioning for images */
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-.left-image, .right-image {
-    max-width: 100%; /* Ensure images scale correctly */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 10px; /* Add space between images */
-    z-index: 0; /* Ensure images are below text */
+.image-container img {
+    width: 45%;
+    max-width: 120px;
+    height: auto;
 }
 
-/* Responsive Adjustments */
-@media (min-width: 600px) {
-    h1 {
-        font-size: 2em; /* Slightly larger heading on larger screens */
-    }
-    p {
-        font-size: 1.1em; /* Slightly larger paragraph text */
-    }
-    .btn {
-        padding: 12px 18px; /* Larger button padding */
-    }
+/* Call-to-action styles */
+.call-to-action {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-@media (min-width: 900px) {
-    .hero-container {
-        flex-direction: row; /* Change to row for larger screens */
-    }
-    .hero-content {
-        flex: 1; /* Allow text to take space */
-        margin-right: 20px; /* Add space to the right of text */
-    }
-    .image-container {
-        flex: 1; /* Allow images to take space */
-    }
+/* Areas covered styles */
+.areas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.areas li {
+    margin: 5px 0;
+}
+
+/* Footer styles */
+.footer {
+    background: #ff4d4d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Floating Call Button Styles */
+.floating-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4d4d; /* Change color as needed */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.floating-call-button:hover {
+    background-color: #ff1a1a; /* Change color on hover */
 }
