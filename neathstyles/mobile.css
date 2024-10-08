@@ -1,198 +1,86 @@
-/* General Resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9; /* Light background for better readability */
-    color: #333; /* Dark text for contrast */
-}
-
-/* Header Styles */
-.header {
-    background: #2c3e50; /* Dark header background */
-    color: #fff; /* White text */
-    padding: 15px;
-    text-align: center;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.logo {
-    max-width: 80%; /* Responsive logo size */
-    height: auto;
-}
-
-.company-name {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-/* Navigation Styles */
-.navigation {
-    background: #34495e; /* Slightly lighter than header */
-}
-
-.navigation ul {
-    list-style: none;
+    margin: 0;
     padding: 0;
-}
-
-.navigation li {
-    text-align: center;
-}
-
-.navigation a {
-    display: block;
-    padding: 15px;
-    color: #fff; /* White text */
-    text-decoration: none;
-}
-
-.navigation a:hover {
-    background: #2980b9; /* Highlight color on hover */
+    line-height: 1.6;
 }
 
 /* Hero Section Styles */
 .hero {
-    text-align: center;
+    position: relative;
     padding: 20px;
+    overflow: hidden; /* Prevent overflow */
+    background-color: #f5f5f5; /* Optional: Add background color */
 }
 
 .hero-container {
-    margin: 0 auto;
-    max-width: 90%; /* Limit the width for mobile */
+    display: flex;
+    flex-direction: column; /* Column layout for mobile */
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text */
 }
 
-.hero-content h1 {
-    font-size: 1.8rem; /* Responsive heading size */
-    margin-bottom: 10px;
+.hero-content {
+    z-index: 1; /* Ensure text is above the images */
+    position: relative; /* Position relative for layering */
+    margin-bottom: 20px; /* Add space between text and images */
 }
 
-.hero-content p {
-    font-size: 1rem; /* Normal paragraph size */
+h1 {
+    font-size: 1.8em; /* Responsive heading size */
+    margin: 0.5em 0; /* Margin around heading */
+}
+
+p {
+    font-size: 1em; /* Base font size for paragraphs */
+    margin: 0.5em 0; /* Margin around paragraphs */
 }
 
 .btn {
-    display: inline-block;
-    background: #e74c3c; /* Button color */
-    color: #fff; /* Button text color */
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 5px 0; /* Space between buttons */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px 0; /* Margin around buttons */
 }
 
-/* Image Container */
 .image-container {
     display: flex;
-    justify-content: center;
-    margin: 15px 0;
+    justify-content: center; /* Center images horizontally */
+    position: relative; /* Relative positioning for images */
 }
 
-.left-image,
-.right-image {
-    max-width: 48%; /* Responsive image size */
-    height: auto;
-    margin: 1%; /* Space between images */
+.left-image, .right-image {
+    max-width: 100%; /* Ensure images scale correctly */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add space between images */
+    z-index: 0; /* Ensure images are below text */
 }
 
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 10px 0;
-    background: #fff; /* White background for sections */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 1.5rem; /* Heading size */
-    margin-bottom: 10px;
-}
-
-/* Service List Styles */
-.services ul {
-    list-style-type: none;
-}
-
-.services li {
-    margin-bottom: 20px; /* Space between service items */
-}
-
-/* Advert Section */
-.advert {
-    text-align: center;
-}
-
-.advert iframe {
-    width: 100%; /* Full width for responsiveness */
-    max-width: 300px; /* Max width for better viewing */
-    height: auto;
-}
-
-/* Footer Styles */
-.footer {
-    background: #2c3e50; /* Dark footer background */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.social-media ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social-media a {
-    color: #fff; /* White text for links */
-    text-decoration: none;
-}
-
-/* Floating Call Button Styles */
-.floating-call-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ff4d4d; /* Call button color */
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-
-.floating-call-button:hover {
-    background-color: #ff1a1a; /* Call button hover color */
-}
-
-/* Responsive Text Adjustments */
-@media (max-width: 480px) {
-    .header, .footer {
-        font-size: 0.9rem; /* Smaller text for header and footer */
+/* Responsive Adjustments */
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2em; /* Slightly larger heading on larger screens */
     }
-
-    .hero-content h1 {
-        font-size: 1.5rem; /* Adjusted heading size for mobile */
+    p {
+        font-size: 1.1em; /* Slightly larger paragraph text */
     }
-
     .btn {
-        font-size: 0.9rem; /* Adjusted button size */
+        padding: 12px 18px; /* Larger button padding */
     }
+}
 
-    .image-container img {
-        max-width: 100%; /* Make images responsive */
+@media (min-width: 900px) {
+    .hero-container {
+        flex-direction: row; /* Change to row for larger screens */
+    }
+    .hero-content {
+        flex: 1; /* Allow text to take space */
+        margin-right: 20px; /* Add space to the right of text */
+    }
+    .image-container {
+        flex: 1; /* Allow images to take space */
     }
 }
