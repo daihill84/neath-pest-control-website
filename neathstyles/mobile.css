@@ -50,20 +50,39 @@ body {
 
 .navigation ul {
     display: flex;
-    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .navigation li {
-    margin: 5px 0;
+    margin: 0 15px; /* Adjusted margin for horizontal spacing */
 }
 
 .navigation a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 8px 15px; /* Added padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navigation a:hover {
+    background-color: #45a049; /* Darker shade on hover */
+    color: #fff; /* Ensuring text color stays readable */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column; /* Stack links on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .navigation li {
+        margin: 5px 0; /* Adjusted margin for vertical spacing */
+    }
 }
 
 .hero {
