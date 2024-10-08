@@ -35,6 +35,17 @@
         .floating-call-button:hover {
             background-color: #ff1a1a; /* Change color on hover */
         }
+
+        .email-address {
+            display: none; /* Initially hide the email address */
+            margin-top: 10px;
+        }
+
+        .email-toggle {
+            cursor: pointer;
+            color: blue; /* Change color as needed */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +56,8 @@
         </div>
         <div class="contact-info">
             <div class="phone-number">07375 303124</div>
-            <div id="email">info@welshtownandcountry.co.uk</div>
+            <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
+            <div class="email-address" id="email-address">info@welshtownandcountry.co.uk</div>
         </div>
     </header>
     
@@ -113,12 +125,7 @@
     <section class="advert" id="advert">
         <h2>Watch My Advert!</h2>
         <p>Check out my video for a closer look at my <strong>pest control services</strong> in Neath. Learn how I can help you keep your home and business pest-free!</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZV5MDCiyosY?si=wAddQTiUprq3JG0W" title="Pest Control Services Advert" frameborder="0" allowfullscreen></iframe>
-        <div class="call-to-action">
-            <h3>Contact Me Today!</h3>
-            <p>If you need immediate pest control assistance or have any questions, don't hesitate to get in touch!</p>
-            <a href="tel:07375303124" class="btn">Call Me Now!</a>
-        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZV5MDCiy6jM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section class="areas" id="areas">
@@ -142,7 +149,8 @@
         <h2>Contact Me</h2>
         <p>If you are facing a pest issue or have questions about my services, feel free to reach out. I offer free consultations and can provide guidance on the best solutions for your needs. Contact me at:</p>
         <p>Phone: <a href="tel:07375303124">07375 303124</a></p>
-        <p>Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
+        <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
+        <div class="email-address" id="email-address">info@welshtownandcountry.co.uk</div>
         <p>Location: Resolven, Neath</p>
     </section>
 
@@ -159,5 +167,16 @@
     <div class="floating-call-button">
         <a href="tel:07375303124">📞</a>
     </div>
+
+    <script>
+        function toggleEmail() {
+            const emailAddress = document.getElementById('email-address');
+            if (emailAddress.style.display === 'none') {
+                emailAddress.style.display = 'block';
+            } else {
+                emailAddress.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
