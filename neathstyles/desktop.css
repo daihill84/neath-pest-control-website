@@ -36,12 +36,28 @@ body {
 /* Contact Info Styles */
 .contact-info {
     font-size: 14px; /* Font size for contact info */
-    text-align: right; /* Align text to the right */
+    text-align: center; /* Center text for contact info */
+    margin: 10px 0; /* Margin for spacing */
 }
 
 .contact-info a {
     color: #fff; /* White text color for links */
     text-decoration: none; /* Remove underline */
+}
+
+.phone-number {
+    font-size: 16px; /* Increase font size for the phone number */
+    color: #FFD700; /* Gold color for visibility */
+    font-weight: bold; /* Bold font for emphasis */
+    background-color: #3a3a3a; /* Dark background for contrast */
+    padding: 10px 15px; /* Padding for better clickability */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.phone-number:hover {
+    background-color: #45a049; /* Darker shade on hover */
+    color: #fff; /* White text color on hover */
 }
 
 /* Navigation Styles */
@@ -86,6 +102,7 @@ body {
 
 .hero h1 {
     color: #333; /* Dark text color for headings */
+    text-align: center; /* Center heading text */
 }
 
 /* Image Styles */
