@@ -21,10 +21,16 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="/neathimages/logo.png" alt="Welsh Town And Country Pest Services Logo">
-        <h1>Professional Pest Control Services in Neath</h1>
-        <p>Contact us: <strong>07375 303124</strong> | Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
+    <header class="header">
+        <div class="logo-container">
+            <img src="neathimages/logo.png" alt="Logo" class="logo">
+            <div class="company-name">Welsh Town And Country Pest Services</div>
+        </div>
+        <div class="contact-info">
+            <div class="phone-number">07375 303124</div>
+            <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
+            <div class="email-address" id="email-address">info@welshtownandcountry.co.uk</div>
+        </div>
     </header>
     
     <nav>
