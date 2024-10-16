@@ -5,12 +5,12 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #e0f7fa; /* Light cyan background for freshness */
 }
 
 /* Header Styles */
 .header {
-    background-color: #0333; /* Dark Green */
+    background-color: #00695c; /* Teal */
     color: white;
     padding: 20px;
     text-align: center; /* Center content */
@@ -63,7 +63,7 @@ body {
 
 /* Email Address Styles */
 .email-address {
-    color: #4CAF50; /* Green for links */
+    color: #ffb300; /* Amber for links */
     text-decoration: none;
     font-weight: bold; /* Bold text */
 }
@@ -74,7 +74,7 @@ body {
 
 /* Navigation Styles */
 .navigation {
-    background-color: #4CAF50; /* Dark Green */
+    background-color: #00796b; /* Dark Teal */
     overflow: hidden;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .navigation a:hover {
-    background-color: #111; /* Black */
+    background-color: #004d40; /* Darker Teal */
 }
 
 /* Main Content Styles */
@@ -106,13 +106,13 @@ main {
 }
 
 h2 {
-    color: #4CAF50; /* Dark Green */
+    color: #ff5722; /* Deep Orange */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
     text-align: center; /* Center heading */
 }
 
 h3 {
-    color: #555; /* Darker Grey */
+    color: #00796b; /* Teal */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* 3D effect */
     text-align: center; /* Center heading */
 }
@@ -130,7 +130,7 @@ ul {
 
 /* Section Styles */
 section {
-    background-color: #fff; /* White */
+    background-color: #ffffff; /* White */
     border: 1px solid #ddd; /* Light Grey Border */
     border-radius: 5px;
     padding: 15px;
@@ -140,7 +140,7 @@ section {
 
 /* Footer Styles */
 .footer {
-    background-color: #333; /* Dark Grey */
+    background-color: #004d40; /* Darker Teal */
     color: white;
     text-align: center;
     padding: 10px;
@@ -149,7 +149,7 @@ section {
 
 /* Footer Links */
 .footer a {
-    color: #4CAF50; /* Green for links */
+    color: #ffb300; /* Amber for links */
     text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ section {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ff4d4d; /* Bright Red */
+    background-color: #ff4081; /* Bright Pink */
     color: white;
     padding: 15px;
     border-radius: 50%;
@@ -174,7 +174,7 @@ section {
 }
 
 .floating-call-button:hover {
-    background-color: #ff1a1a; /* Darker Red on Hover */
+    background-color: #f50057; /* Darker Pink on Hover */
 }
 
 /* Media Queries for Responsive Design */
