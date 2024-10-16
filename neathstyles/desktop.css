@@ -13,9 +13,10 @@ body {
     background-color: #4CAF50; /* Dark Green */
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: center; /* Center content */
 }
 
+/* Logo Container */
 .logo-container {
     display: flex;
     align-items: center;
@@ -23,14 +24,46 @@ body {
     margin-bottom: 10px;
 }
 
+/* Logo */
 .logo {
     height: 60px; /* Adjust logo size */
     margin-right: 15px;
 }
 
+/* Company Name */
 .company-name {
     font-size: 1.8em;
     font-weight: bold;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    margin-top: 10px; /* Spacing above contact info */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center contact items */
+}
+
+/* Phone Number Styles */
+.phone-number {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Space between phone number and email */
+}
+
+/* Email Toggle Styles */
+.email-toggle {
+    cursor: pointer; /* Pointer cursor for clickable text */
+    margin-bottom: 5px; /* Space between email toggle and email link */
+}
+
+/* Email Address Styles */
+.email-address {
+    color: #4CAF50; /* Green for links */
+    text-decoration: none;
+}
+
+.email-address:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Navigation Styles */
@@ -141,4 +174,3 @@ section {
         text-align: center;
     }
 }
-
