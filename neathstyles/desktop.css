@@ -45,6 +45,7 @@ body {
 .email-toggle {
     cursor: pointer;
     color: #ffdd57;
+    margin-top: 5px; /* Added spacing for better alignment */
 }
 
 .navigation {
@@ -121,11 +122,12 @@ footer {
     font-size: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
 }
 
 .floating-call-button:hover {
     background-color: #ff1a1a;
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 /* Responsive Styles */
