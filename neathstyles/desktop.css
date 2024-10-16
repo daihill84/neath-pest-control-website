@@ -1,19 +1,19 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2; /* Light background for the whole page */
-    color: #333; /* Dark text color for readability */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header Styles */
 .header {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between;
     align-items: center;
-    background-color: #000000; /* Black background for header */
-    padding: 20px; /* Adjust padding */
+    padding: 10px;
+    background-color: #3a3a3a;
+    color: #fff;
 }
 
 .logo-container {
@@ -22,100 +22,55 @@ body {
 }
 
 .logo {
-    width: 50px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Space between logo and text */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 .company-name {
-    font-size: 30px; /* Reduced font size for better fit */
-    font-weight: bold;
-    color: #4caf50; /* Green text color */
-    letter-spacing: 1px; /* Add spacing for a modern feel */
+    font-size: 18px;
 }
 
 .contact-info {
-    text-align: center;
+    font-size: 14px;
+    text-align: right;
 }
 
-.phone-number,
-.email {
-    font-size: 14px; /* Smaller font size */
-    color: #ffffff; /* White text color */
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Navigation Styles */
 .navigation {
-    background-color: #000000; /* Black background for navigation */
-    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    background-color: #4caf50;
+    padding: 10px;
 }
 
 .navigation ul {
+    display: flex;
     list-style: none;
+    margin: 0;
     padding: 0;
-    display: flex; /* Horizontal menu */
-    flex-direction: column; /* Stack menu items vertically */
-    align-items: center; /* Center items */
 }
 
 .navigation li {
-    margin: 10px 0; /* Space between menu items */
+    margin: 0 15px; /* Adjusted margin for horizontal spacing */
 }
 
 .navigation a {
-    color: #4caf50; /* Green text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 15px; /* Add padding for better click area */
-    transition: background-color 0.3s; /* Smooth transition */
-    font-weight: 600; /* Make font bold */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px; /* Added padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .navigation a:hover {
-    background-color: #3949ab; /* Darker shade on hover */
+    background-color: #45a049; /* Darker shade on hover */
+    color: #fff; /* Ensuring text color stays readable */
 }
 
-/* Floating Call Button */
-.floating-call-button {
-    position: fixed;
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
-    background-color: #004643; /* Deep green */
-    color: white;
-    padding: 15px 20px; /* Increase padding for a larger button */
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
-    font-size: 20px; /* Adjusted font size */
-    transition: background-color 0.3s;
-    z-index: 1000; /* Make sure it’s on top of other content */
-}
-
-.floating-call-button:hover {
-    background-color: #FFD700; /* Gold */
-}
-
-/* Footer Styles */
-.footer {
-    text-align: center;
-    padding: 15px; /* Adjusted padding */
-    background-color: #000000; /* Black background */
-    color: #4caf50; /* Green text color */
-    font-weight: 600; /* Bold footer text */
-}
-
-.call-btn {
-    display: inline-block;
-    padding: 5px 10px; /* Smaller padding */
-    background-color: #ff4d4d; /* Red background */
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 10px;
-    font-size: 14px; /* Adjust font size as needed */
-}
-
-.call-btn:hover {
-    background-color: #ff1a1a; /* Darker red on hover */
-}
-
-/* Remove media queries to keep the mobile style for all screen sizes */
+/* Responsive Design */
