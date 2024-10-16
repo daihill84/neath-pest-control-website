@@ -5,15 +5,16 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background color */
 }
 
 /* Header Styles */
 .header {
-    background-color: #333; /* Dark Green */
+    background-color: #0333; /* Dark Green */
     color: white;
     padding: 20px;
     text-align: center; /* Center content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 /* Logo Container */
@@ -21,19 +22,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Stack logo and name vertically */
     margin-bottom: 10px;
 }
 
 /* Logo */
 .logo {
     height: 60px; /* Adjust logo size */
-    margin-right: 15px;
+    margin-bottom: 10px; /* Space below logo */
 }
 
 /* Company Name */
 .company-name {
     font-size: 1.8em;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D effect */
 }
 
 /* Contact Info Styles */
@@ -48,18 +51,21 @@ body {
 .phone-number {
     font-size: 1.2em;
     margin-bottom: 5px; /* Space between phone number and email */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Text shadow */
 }
 
 /* Email Toggle Styles */
 .email-toggle {
     cursor: pointer; /* Pointer cursor for clickable text */
     margin-bottom: 5px; /* Space between email toggle and email link */
+    color: #fff; /* White text */
 }
 
 /* Email Address Styles */
 .email-address {
     color: #4CAF50; /* Green for links */
     text-decoration: none;
+    font-weight: bold; /* Bold text */
 }
 
 .email-address:hover {
@@ -68,17 +74,18 @@ body {
 
 /* Navigation Styles */
 .navigation {
-    background-color: #4CAF50; /* Dark Grey */
+    background-color: #4CAF50; /* Dark Green */
     overflow: hidden;
 }
 
 .navigation ul {
     list-style-type: none;
     padding: 0;
+    text-align: center; /* Center navigation items */
 }
 
 .navigation li {
-    float: left;
+    display: inline-block; /* Align items inline */
 }
 
 .navigation a {
@@ -100,19 +107,25 @@ main {
 
 h2 {
     color: #4CAF50; /* Dark Green */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
+    text-align: center; /* Center heading */
 }
 
 h3 {
     color: #555; /* Darker Grey */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* 3D effect */
+    text-align: center; /* Center heading */
 }
 
 p {
     margin: 15px 0;
+    text-align: center; /* Center paragraph text */
 }
 
 /* List Styles */
 ul {
     padding-left: 20px; /* Indentation for lists */
+    text-align: center; /* Center list items */
 }
 
 /* Section Styles */
@@ -134,6 +147,7 @@ section {
     position: relative;
 }
 
+/* Footer Links */
 .footer a {
     color: #4CAF50; /* Green for links */
     text-decoration: none;
