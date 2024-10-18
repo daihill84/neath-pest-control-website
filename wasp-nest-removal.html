@@ -80,6 +80,7 @@
             <li><a href="/mole-catching">Mole Catching</a></li>
             <li><a href="/insect-control">Insect Control</a></li>
             <li><a href="/pest-management">Pest Management</a></li>
+            <li><a href="/bees">Bees</a></li> <!-- Link to the Bees page -->
             <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>
@@ -100,6 +101,13 @@
             <p>Our <strong>wasp pest control</strong> services are designed with your safety and satisfaction in mind. We understand the importance of protecting your home and family from wasps, and we use the latest techniques and products to ensure effective results.</p>
             <h3>Protect Your Property Today!</h3>
             <p>For reliable <strong>wasp nest removal</strong>, call us at <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a>. We offer free consultations to discuss your pest control needs.</p>
+        </section>
+
+        <section>
+            <h2>Bees: Important Pollinators</h2>
+            <p>While bees are essential for our ecosystem, they can sometimes be found in inconvenient places. It's important to note that bees cannot be killed unless under certain circumstances, as they play a crucial role in pollination and maintaining biodiversity.</p>
+            <p>If you have a bee hive on your property, we offer safe hive relocation services to move the hive without harming the bees. Our trained professionals will assess the situation and ensure that the bees are safely relocated to a more suitable environment.</p>
+            <p>For more information on our bee relocation services, please <a href="/bees">visit our Bees page</a>.</p>
         </section>
 
         <section>
@@ -132,22 +140,21 @@
 
     <footer class="footer">
         <p>&copy; 2024 Welsh Town And Country Pest Services. All rights reserved.</p>
-        <p>Follow us on <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank">Facebook</a>, <a href="https://www.instagram.com/" target="_blank">Instagram</a>, and <a href="https://twitter.com/" target="_blank">Twitter</a>.</p>
-        <p>Phone: <strong><a href="tel:07375303124">07375 303124</a></strong></p>
-        <p><a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a></p>
+        <p>Follow us on <a href="https://www.facebook.com/YourPage">Facebook</a>.</p>
     </footer>
 
-    <!-- Floating Call Button -->
-    <a href="tel:07375303124" class="floating-call-button">📞</a>
+    <div class="floating-call-button" onclick="window.location.href='tel:07375303124'">
+        <span>Call Us</span>
+    </div>
 
     <script>
         function toggleEmail() {
-            const emailElement = document.getElementById('email-address');
-            emailElement.style.display = emailElement.style.display === 'none' ? 'block' : 'none';
+            const email = document.getElementById("email-address");
+            email.style.display = email.style.display === "block" ? "none" : "block";
         }
 
         function sendEmail() {
-            window.location.href = 'mailto:info@welshtownandcountry.co.uk';
+            window.location.href = "mailto:info@welshtownandcountry.co.uk?subject=Inquiry about pest control services";
         }
     </script>
 </body>
