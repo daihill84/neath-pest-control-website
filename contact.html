@@ -12,7 +12,34 @@
     <meta property="og:description" content="Reach out to Welsh Town And Country Pest Services for expert pest control services, including wasp removal, mole catching, and dog sitting.">
     <meta property="og:image" content="images/logo.png"> <!-- Update with your logo path -->
     <meta property="og:url" content="https://neath.welshtownandcountry.co.uk/contact">
-<style>
+    
+    <!-- JSON-LD Structured Data for Geotags -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Welsh Town And Country Pest Services",
+      "image": "https://neath.welshtownandcountry.co.uk/images/logo.png",
+      "telephone": "+447375303124",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Resolven",
+        "addressLocality": "Neath",
+        "addressRegion": "Wales",
+        "postalCode": "SA11 4DP",
+        "addressCountry": "UK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.6852",   // Replace with your actual latitude
+        "longitude": "-3.7737"    // Replace with your actual longitude
+      },
+      "url": "https://neath.welshtownandcountry.co.uk/contact",
+      "sameAs": "https://www.facebook.com/profile.php?id=61564861332160"
+    }
+    </script>
+
+    <style>
         /* Floating Call Button Styles */
         .floating-call-button {
             position: fixed;
@@ -54,6 +81,15 @@
             font-size: 1.5em;
             color: #ff4d4d;
         }
+
+        /* Centered Image Styles */
+        .centered-image {
+            display: block;
+            margin: 20px auto; /* Centers the image horizontally */
+            max-width: 100%;    /* Ensures the image is responsive */
+            height: auto;       /* Maintains the aspect ratio */
+            max-height: 300px;  /* Limits the maximum height */
+        }
     </style>
 </head>
 
@@ -70,7 +106,7 @@
         </div>
     </header>
     
-     <nav class="navigation">
+    <nav class="navigation">
         <ul>
             <li><a href="index">Home</a></li>
             <li><a href="wasp-nest-removal">Wasp Nest Removal</a></li>
@@ -81,9 +117,10 @@
             <li><a href="contact">Contact</a></li>
         </ul>
     </nav>
+    
     <main>
         <h2>Contact Us</h2>
-        <p>If you have any questions or need pest control services, feel free to reach out to us! We offer expert pest control, including wasp removal, mole catching, insect control, and microchipping services. Our team is ready to assist you in Neath, Port Talbot, Brecon, and surrounding areas.</p>
+        <p>If you have any questions or need pest control services in Neath, feel free to reach out to us! We offer expert pest control, including wasp removal, mole catching, insect control, and microchipping services. Our team is ready to assist you in Neath, Port Talbot, Brecon, and surrounding areas. Trust us for effective <strong>Neath pest control</strong> solutions!</p>
         
         <section>
             <h3>Get in Touch</h3>
@@ -108,8 +145,14 @@
             <p>For in-person inquiries, you can visit us at:</p>
             <address>
                 Resolven, Neath, SA11 4DP, UK<br>
-                <strong>Service Areas:</strong> Neath, Port Talbot, Brecon, Merthyr, Aberdare, and surrounding areas.
+                <strong>Service Areas:</strong> Neath, Port Talbot, Brecon, Merthyr, Aberdare, and surrounding areas. For more information about <strong>pest control Neath</strong>, please contact us.
             </address>
+        </section>
+
+        <!-- Centered Image Section -->
+        <section>
+            <h3>Our Service Areas</h3>
+            <img src="images/area.png" alt="Service Areas" class="centered-image">
         </section>
     </main>
 
