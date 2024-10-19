@@ -55,6 +55,29 @@
             "description": "Expert pest control services in Neath, including wasp removal, rodent control, and insect management. Contact us for professional help!"
         }
     </script>
+    <style>
+        /* Floating Call Button Styles */
+        .floating-call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .floating-call-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -62,19 +85,18 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCN4VDL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-   <header class="header">
-    <div class="logo-container">
-        <img src="neathimages/logo.png" alt="Logo" class="logo">
-        <div class="company-name">Welsh Town And Country Pest Services</div>
-        <h1>Pest Control Services in Neath and Surrounding Area</h1> <!-- Corrected this line -->
-    </div>
-    <div class="contact-info">
-        <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
-        <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
-        <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a>
-    </div>
-</header>
-
+    <header class="header">
+        <div class="logo-container">
+            <img src="neathimages/logo.png" alt="Logo" class="logo">
+            <div class="company-name">Welsh Town And Country Pest Services</div>
+            <h1>Pest Control Services in Neath and Surrounding Area</h1>
+        </div>
+        <div class="contact-info">
+            <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
+            <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
+            <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a>
+        </div>
+    </header>
 
     <nav class="navigation">
         <ul>
@@ -104,88 +126,59 @@
             <p>For reliable pest control services, call us at <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a>. We offer free consultations to discuss your pest control needs.</p>
         </section>
 
-       <section style="text-align: center;">
-    <h2>Watch Our Advert!</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZV5MDCiyosY?si=PBbPxBRtW7gseTmY" frameborder="0" allowfullscreen></iframe>
-    
-    <div class="services-description" style="margin-top: 20px;">
-        <h3>About Our Pest Control Services</h3>
-        <p>
-            At Welsh Town And Country Pest Services, we specialize in providing comprehensive <strong>pest control solutions</strong> for homes and businesses in Neath and the surrounding areas. Our expert team is equipped to handle all types of pest issues, including <strong>insect control</strong>, <strong>rodent control</strong>, <strong>mole catching</strong>, and <strong>wasp nest removal</strong>.
-        </p>
-        <p>
-            We offer subscription packages for <strong>routine checkups</strong> to ensure your property remains pest-free all year round. Our tailored services are designed to meet the unique needs of our clients, delivering reliable and effective <strong>pest management</strong> solutions.
-        </p>
-        <p>
-            With a focus on customer satisfaction and eco-friendly practices, we utilize the latest techniques and products to safely manage pest infestations. Whether you face a minor issue or a major infestation, trust Welsh Town And Country Pest Services to provide prompt and professional assistance.
-        </p>
-        <p>
-            Contact us today for the best <strong>pest control services</strong> in Neath and let us help you maintain a safe and healthy environment!
-        </p>
-    </div>
-</section>
-        
-<section style="text-align: center;">
-    <h2>Pests We Cover</h2>
-    <p>At Welsh Town And Country Pest Services, we understand that different pests require different approaches for effective control. Our team is equipped with the expertise and tools to tackle a wide range of pest issues in Neath and the surrounding areas. Below is a detailed list of the pests we cover, along with a brief description of each:</p>
-    
-    <h3>1. Wasps</h3>
-    <p>Wasp nests can pose a significant threat to homeowners and businesses alike. Our professional wasp nest removal services ensure safe and efficient removal to protect your property from potential stings. We use specialized techniques to remove nests without harming the surrounding environment.</p>
-    
-    <h3>2. Rodents</h3>
-    <p>Rodent infestations, including rats and mice, can lead to health risks and property damage. Our rodent control solutions involve thorough inspections and targeted baiting strategies. We also offer prevention measures to keep these unwanted guests from returning.</p>
-    
-    <h3>3. Ants</h3>
-    <p>Ants can invade homes and businesses in search of food and shelter. Our ant control services focus on identifying the species and eliminating colonies at their source. Whether you’re dealing with garden ants or more aggressive species, we have the right solutions for you.</p>
-    
-    <h3>4. Bed Bugs</h3>
-    <p>Bed bugs are notorious for their ability to hide in small spaces, making them difficult to eradicate. We employ advanced techniques for bed bug detection and treatment, ensuring a thorough approach to eliminate these pests and restore comfort to your sleeping environment.</p>
-
-    <h3>5. Cockroaches</h3>
-    <p>Cockroaches are resilient pests that can contaminate food and spread diseases. Our cockroach control services involve a combination of baiting, trapping, and sanitation advice to eliminate infestations effectively and prevent future occurrences.</p>
-
-    <h3>6. Fleas</h3>
-    <p>Fleas can be a nuisance for both pets and humans. Our flea control solutions include thorough home treatments and advice on how to manage infestations in pets. We aim to eliminate fleas and prevent re-infestation, ensuring a comfortable environment for you and your animals.</p>
-
-    <h3>7. Moths</h3>
-    <p>Moths can cause damage to clothing and stored items. We provide effective moth control services, including treatments for clothing and storage areas, ensuring your belongings are protected from these destructive pests.</p>
-
-    <h3>8. Silverfish</h3>
-    <p>Silverfish thrive in damp areas and can damage books, paper, and other materials. Our silverfish control strategies focus on reducing humidity and treating infested areas to effectively eliminate these pests.</p>
-
-    <h3>9. Spiders</h3>
-    <p>While many spiders are harmless, some can pose a threat. Our spider control services focus on identifying species and reducing their numbers in your home or business. We offer prevention tips to keep spiders at bay.</p>
-
-    <h3>10. Squirrels</h3>
-    <p>Squirrels can cause damage to roofs and insulation, and they can also pose health risks. Our humane squirrel removal services ensure these pests are safely relocated, while also implementing measures to prevent their return.</p>
-
-    <p>We are dedicated to providing comprehensive pest control solutions tailored to your specific needs. If you're facing any pest-related issues, don’t hesitate to contact Welsh Town And Country Pest Services. Our expert team is here to help you reclaim your space!</p>
-</section>
+        <section style="text-align: center;">
+            <h2>Watch Our Advert!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZV5MDCiyosY?si=PBbPxBRtW7gseTmY" frameborder="0" allowfullscreen></iframe>
+            
+            <div class="services-description" style="margin-top: 20px;">
+                <h3>About Our Pest Control Services</h3>
+                <p>
+                    At Welsh Town And Country Pest Services, we specialize in providing comprehensive <strong>pest control solutions</strong> for homes and businesses in Neath and the surrounding areas. Our expert team is equipped to handle all types of pest issues, including <strong>insect control</strong>, <strong>rodent control</strong>, <strong>mole catching</strong>, and <strong>wasp nest removal</strong>.
+                </p>
+                <p>
+                    We offer subscription packages for <strong>routine checkups</strong> to ensure your property remains pest-free all year round. Our tailored services are designed to meet the unique needs of our clients, delivering reliable and effective <strong>pest management</strong> solutions.
+                </p>
+                <p>
+                    With a focus on customer satisfaction, we utilize the latest techniques and products to safely manage pest infestations. Whether you face a minor issue or a major infestation, trust Welsh Town And Country Pest Services to provide prompt and professional assistance.
+                </p>
+                <p>
+                    Contact us today for the best <strong>pest control services</strong> in Neath and let us help you reclaim your space!
+                </p>
+            </div>
+        </section>
 
         <section>
-            <h2>Areas We Serve</h2>
-            <p>We are proud to offer our <strong>pest control services</strong> in the following areas:</p>
-            <ul>
-                <li><a href="https://www.npt.gov.uk/" target="_blank" rel="noopener">Neath</a> - Our home base, where we have served countless satisfied customers.</li>
-                <li><a href="https://www.merthyr.gov.uk/" target="_blank" rel="noopener">Merthyr Tydfil</a> - Effective pest solutions tailored to local needs.</li>
-                <li><a href="https://www.breconbeacons.org/" target="_blank" rel="noopener">Brecon</a> - Comprehensive services for both residential and commercial properties.</li>
-                <li><a href="https://www.aberdareonline.co.uk/" target="_blank" rel="noopener">Aberdare</a> - Quick and efficient responses to pest emergencies.</li>
-            </ul>
+            <h2>Our Services</h2>
+            <h3>1. Wasp Nest Removal</h3>
+            <p>We specialize in safely and efficiently removing wasp nests to protect your home and family.</p>
+
+            <h3>2. Rodents</h3>
+            <p>Rats and mice can cause considerable damage to properties and pose health risks. Our rodent control services focus on eliminating infestations and preventing future occurrences.</p>
+
+            <h3>3. Moles</h3>
+            <p>Moles can wreak havoc on gardens and lawns. Our mole-catching services effectively manage these pests, ensuring your outdoor spaces remain intact.</p>
+
+            <h3>4. Insects</h3>
+            <p>We provide targeted treatments for various insects, including ants, cockroaches, and bedbugs. Our insect control services are designed to eradicate infestations and provide peace of mind.</p>
         </section>
     </main>
 
-    <footer>
-        <p>For more information, visit our main website: <a href="https://www.welshtownandcountry.co.uk">Welsh Town And Country Pest Services</a> | <a href="https://brecon.welshtownandcountry.co.uk">Brecon Pest Control</a></p>
-        <p>© 2024 Welsh Town And Country Pest Services. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2024 Welsh Town And Country Pest Services. All Rights Reserved.</p>
+        <p>Contact us: <strong><a href="tel:07375303124">07375 303124</a></strong> | Email: <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a></p>
+        <p>Address: Your Street Address, Neath, SA11 4DP</p>
     </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:07375303124" class="floating-call-button">📞CALL NOW</a>
 
     <script>
         function toggleEmail() {
-            var emailAddress = document.getElementById("email-address");
-            if (emailAddress.style.display === "none") {
-                emailAddress.style.display = "block";
+            var emailLink = document.getElementById("info@welshtownandcountry.co.uk");
+            if (emailLink.style.display === "none") {
+                emailLink.style.display = "inline";
             } else {
-                emailAddress.style.display = "none";
+                emailLink.style.display = "none";
             }
         }
 
