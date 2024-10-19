@@ -12,7 +12,7 @@ body {
 .header {
     background-color: grey; 
     color: white;
-    padding: 2px;
+    padding: 10px;
     text-align: center; /* Center content */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
@@ -34,7 +34,7 @@ body {
 
 /* Company Name */
 .company-name {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D effect */
 }
@@ -126,30 +126,6 @@ p {
 ul {
     padding-left: 20px; /* Indentation for lists */
     text-align: center; /* Center list items */
-}
-.pest-lists {
-    display: flex;                /* Use flexbox to arrange items side by side */
-    justify-content: space-between; /* Evenly space the pest lists */
-    margin: 20px 0;             /* Add margin for spacing */
-}
-
-.pest-list {
-    flex: 1;                    /* Allow each list to take equal space */
-    margin: 0 10px;            /* Add horizontal margin between lists */
-}
-
-.pest-list h4 {
-    text-align: center;         /* Center the headings */
-}
-
-.pest-list ul {
-    padding: 0;                /* Remove default padding */
-    list-style-type: none;     /* Remove bullet points */
-}
-
-.pest-list li {
-    text-align: center;         /* Center the list items */
-    margin-bottom: 5px;        /* Space between list items */
 }
 
 /* Section Styles */
