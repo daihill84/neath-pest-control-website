@@ -105,6 +105,7 @@ main {
     padding: 20px;
 }
 
+/* Heading Styles */
 h2 {
     color: #ff5722; /* Deep Orange */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
@@ -117,6 +118,7 @@ h3 {
     text-align: center; /* Center heading */
 }
 
+/* Paragraph Styles */
 p {
     margin: 15px 0;
     text-align: center; /* Center paragraph text */
@@ -136,6 +138,7 @@ section {
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within the section */
 }
 
 /* Footer Styles */
@@ -160,7 +163,6 @@ section {
     width: 30px;  /* Set a fixed width */
     margin: 0 15px; /* Space between the icons */
 }
-
 
 /* Footer Links */
 .footer a {
