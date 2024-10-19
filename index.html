@@ -101,8 +101,9 @@
         </div>
         <div class="contact-info">
             <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
-            <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
-            <a class="email-address" id="email-address" href="#" onclick="sendEmail()" style="display:none;">info@welshtownandcountry.co.uk</a>
+            <div class="email-info">
+                <a class="email-address" href="mailto:info&#64;welshtownandcountry&#46;co&#46;uk">info&#64;welshtownandcountry&#46;co&#46;uk</a>
+            </div>
         </div>
     </header>
 
@@ -131,75 +132,34 @@
                 <li><a href="pest-management">Pest Management</a> - Long-term strategies to keep pests away.</li>
             </ul>
             <h3>Protect Your Property Today!</h3>
-            <p>For reliable pest control services, call us at <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a>. We offer free consultations to discuss your pest control needs.</p>
+            <p>For reliable pest control services, call us at <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" href="mailto:info&#64;welshtownandcountry&#46;co&#46;uk">info&#64;welshtownandcountry&#46;co&#46;uk</a>. We offer free consultations to discuss your pest control needs.</p>
             <p>Visit our main website for more information: <a href="https://www.welshtownandcountry.co.uk">Welsh Town And Country Pest Services</a>.</p>
             <p>Explore our Brecon pest control services here: <a href="https://brecon.welshtownandcountry.co.uk">Brecon Pest Control</a>.</p>
         </section>
 
         <section id="pest-list">
-    <h2>Pest List</h2>
-    <p>At Welsh Town And Country Pest Services, we handle a variety of pests to ensure your home and business remain pest-free. Here’s a comprehensive list of pests we can help you with:</p>
-    <ul>
-        <li><strong>Ants</strong> - Including black garden ants, red ants, and carpenter ants.</li>
-        <li><strong>Bed Bugs</strong> - Effective treatment for infestations in homes and businesses.</li>
-        <li><strong>Bees</strong> - Safe removal of honeybees and bumblebees when necessary.</li>
-        <li><strong>Flies</strong> - Including house flies, fruit flies, and cluster flies.</li>
-        <li><strong>Wasps</strong> - Wasp nest removal and prevention services.</li>
-        <li><strong>Rodents</strong> - Including rats, mice, and voles.</li>
-        <li><strong>Rabbits</strong> - Control and management of rabbit populations in gardens and farmland.</li>
-        <li><strong>Squirrels</strong> - Safe removal of grey squirrels from your property.</li>
-        <li><strong>Fleas</strong> - Comprehensive flea control for pets and homes.</li>
-        <li><strong>Ticks</strong> - Management and prevention of tick infestations.</li>
-        <li><strong>Silverfish</strong> - Effective treatments for these nocturnal pests.</li>
-        <li><strong>Woodlice</strong> - Control and prevention of woodlice infestations.</li>
-        <li><strong>Moths</strong> - Treatment for moth infestations in clothing and food.</li>
-    </ul>
-    <p>If you encounter any of these pests, don't hesitate to contact us for professional pest control services tailored to your needs. Call <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" id="email-address" href="#" onclick="sendEmail()">info@welshtownandcountry.co.uk</a>.</p>
-      </section>
-
-        <section style="text-align: center;">
-            <h2>Watch Our Advert!</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZV5MDCiyosY?si=wAddQTiUprq3JG0W" frameborder="0" allowfullscreen></iframe>
-            
-            <div class="services-description" style="margin-top: 20px;">
-                <h3>About Our Pest Control Services</h3>
-                <p>
-                    At Welsh Town And Country Pest Services, we specialize in providing comprehensive <strong>pest control solutions</strong> for homes and businesses in Neath and the surrounding areas. Our expert team is equipped to handle all types of pest issues, including <strong>insect control</strong>, <strong>rodent control</strong>, <strong>wasp nest removal</strong>, and more. We use safe and effective methods to ensure the well-being of your family, pets, and the environment.
-                </p>
-                <p>
-                    Our commitment to quality service and customer satisfaction sets us apart. We assess your unique situation and develop a tailored pest management plan that works for you. Whether it’s a one-time service or ongoing maintenance, we are here to provide peace of mind.
-                </p>
-                <p>
-                    Don’t let pests disrupt your life. Contact us today to schedule a consultation and learn more about how we can help you maintain a pest-free environment.
-                </p>
-            </div>
+            <h2>Pest List</h2>
+            <p>At Welsh Town And Country Pest Services, we handle a variety of pests to ensure your property remains safe and pest-free.</p>
+            <ul>
+                <li>Wasps</li>
+                <li>Rats</li>
+                <li>Mice</li>
+                <li>Moles</li>
+                <li>Ants</li>
+                <li>Flies</li>
+                <li>Bed Bugs</li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Welsh Town And Country Pest Services | <a href="privacy-policy">Privacy Policy</a></p>
-        </div>
+        <p>&copy; 2024 Welsh Town And Country Pest Services | <a href="privacy-policy">Privacy Policy</a></p>
+        <p>Contact us at <a class="email-address" href="mailto:info&#64;welshtownandcountry&#46;co&#46;uk">info&#64;welshtownandcountry&#46;co&#46;uk</a> or call <a href="tel:07375303124">07375 303124</a>.</p>
     </footer>
 
-    <div class="floating-call-button">
+    <button class="floating-call-button">
         <a href="tel:07375303124">📞</a>
-    </div>
+    </button>
 
-    <script>
-        function toggleEmail() {
-            var email = document.getElementById("email-address");
-            if (email.style.display === "none") {
-                email.style.display = "block";
-            } else {
-                email.style.display = "none";
-            }
-        }
-
-        function sendEmail() {
-            window.location.href = "mailto:info@welshtownandcountry.co.uk";
-        }
-    </script>
 </body>
-
 </html>
