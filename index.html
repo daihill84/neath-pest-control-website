@@ -16,9 +16,7 @@
     <link rel="icon" href="neathimages/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="neathstyles/desktop.css">
     <link rel="stylesheet" href="neathstyles/mobile.css" media="only screen and (max-width: 900px)">
-</head>
 
-<body>
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -34,9 +32,90 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Welsh Town And Country Pest Services",
+            "image": "https://neath.welshtownandcountry.co.uk/neathimages/logo.png",
+            "telephone": "07375 303124",
+            "email": "info@welshtownandcountry.co.uk",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Resolven",
+                "addressRegion": "Neath",
+                "postalCode": "SA11 4DP",
+                "streetAddress": "11 Glynneath Road"
+            },
+            "url": "https://neath.welshtownandcountry.co.uk",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61564861332160"
+            ],
+            "description": "Expert pest control services in Neath, including wasp removal, rodent control, and insect management. Contact us for professional help!"
+        }
+    </script>
+
+    <style>
+        /* Floating Call Button */
+        .floating-call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #28a745; /* Green background */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 50%; /* Circular button */
+            width: 60px; /* Button width */
+            height: 60px; /* Button height */
+            display: flex; /* Center the icon */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            font-size: 24px; /* Font size */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            cursor: pointer; /* Pointer cursor */
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+
+        .floating-call-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .floating-call-button a {
+            color: white; /* White text color */
+            text-decoration: none; /* No underline */
+        }
+
+        .service-lists {
+            display: flex; /* Flexbox for side by side */
+            justify-content: space-between; /* Space out the lists */
+            margin: 20px 0; /* Margin for spacing */
+        }
+
+        .service-list {
+            flex: 1; /* Equal width */
+            margin: 0 10px; /* Margin between lists */
+        }
+
+        .service-list h3 {
+            text-align: center; /* Center headings */
+        }
+
+        .service-list ul {
+            list-style: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCN4VDL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="header">
         <div class="logo-container">
-            <img src="neathimages/logo.png" alt="Welsh Town And Country Pest Services Logo" class="logo">
+            <img src="neathimages/logo.png" alt="Logo" class="logo">
             <div class="company-name">Welsh Town And Country Pest Services</div>
             <h1>Pest Control Services in Neath and Surrounding Area</h1>
         </div>
@@ -99,19 +178,6 @@
         </section>
 
         <section>
-            <h3>Areas We Serve:</h3>
-            <ul>
-                <li>Neath</li>
-                <li>Merthyr</li>
-                <li>Aberdare</li>
-                <li>Brecon</li>
-                <li>Port Talbot</li>
-                <li>Swansea</li>
-                <li>And Surrounding Areas</li>
-            </ul>
-        </section>
-
-        <section>
             <h3>Watch Our Introductory Video</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/OjJrWnVPWQe" frameborder="0" allowfullscreen></iframe>
         </section>
@@ -125,19 +191,14 @@
         </div>
     </footer>
 
-    <!-- Custom Scripts -->
     <script>
-        function sendEmail() {
-            window.location.href = "mailto:info@welshtownandcountry.co.uk";
+        function toggleEmail() {
+            const emailAddress = document.getElementById('email-address');
+            emailAddress.style.display = emailAddress.style.display === 'none' ? 'block' : 'none';
         }
 
-        function toggleEmail() {
-            var emailLink = document.getElementById("email-address");
-            if (emailLink.style.display === "none") {
-                emailLink.style.display = "block";
-            } else {
-                emailLink.style.display = "none";
-            }
+        function sendEmail() {
+            window.location.href = "mailto:info@welshtownandcountry.co.uk";
         }
     </script>
 </body>
