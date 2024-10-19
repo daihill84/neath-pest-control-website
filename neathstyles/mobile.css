@@ -73,6 +73,13 @@ body {
     color: #fff; /* Ensuring text color stays readable */
 }
 
+/* New styles for common pests */
+h5 {
+    text-align: center; /* Center align the h5 headings */
+    margin-top: 20px; /* Space above h5 headings */
+    color: #555; /* Slightly lighter color */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navigation ul {
