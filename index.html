@@ -18,42 +18,48 @@
     <link rel="stylesheet" href="neathstyles/mobile.css" media="only screen and (max-width: 900px)">
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PBCN4VDL');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PBCN4VDL');
+    </script>
     <!-- End Google Tag Manager -->
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Welsh Town And Country Pest Services",
-        "image": "https://neath.welshtownandcountry.co.uk/neathimages/logo.png",
-        "telephone": "07375 303124",
-        "email": "info@welshtownandcountry.co.uk",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Neath",
-            "addressRegion": "Wales",
-            "postalCode": "SA11 4DP",
-            "streetAddress": "Your Street Address"
-        },
-        "url": "https://welshtownandcountry.co.uk",
-        "sameAs": [
-            "https://www.facebook.com/profile.php?id=61564861332160"
-        ],
-        "description": "Expert pest control services in Neath, including wasp removal, rodent control, and insect management. Contact us for professional help!"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Welsh Town And Country Pest Services",
+            "image": "https://neath.welshtownandcountry.co.uk/neathimages/logo.png",
+            "telephone": "07375 303124",
+            "email": "info@welshtownandcountry.co.uk",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Neath",
+                "addressRegion": "Wales",
+                "postalCode": "SA11 4DP",
+                "streetAddress": "Your Street Address"
+            },
+            "url": "https://welshtownandcountry.co.uk",
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=61564861332160"
+            ],
+            "description": "Expert pest control services in Neath, including wasp removal, rodent control, and insect management. Contact us for professional help!"
+        }
     </script>
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCN4VDL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCN4VDL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <header class="header">
@@ -81,7 +87,7 @@
     </nav>
 
     <main>
-        <h1>Pest Control Services in Neath</h1> <!-- Added H1 heading -->
+        <h1>Pest Control Services in Neath</h1>
         <section>
             <h2>Welcome to Welsh Town And Country Pest Services!</h2>
             <p>We provide expert <strong>pest control services</strong> across Neath and the surrounding areas, focusing on effective solutions tailored to your needs. Whether you're dealing with a wasp nest, rodent infestation, or any other pest-related issue, our trained professionals are here to help.</p>
@@ -124,17 +130,31 @@
             <ul>
                 <li><a href="https://www.npt.gov.uk/" target="_blank" rel="noopener">Neath</a> - Our home base, where we have served countless satisfied customers.</li>
                 <li><a href="https://www.merthyr.gov.uk/" target="_blank" rel="noopener">Merthyr Tydfil</a> - Effective pest solutions tailored to local needs.</li>
-                <li><a href="https://www.rctcbc.gov.uk/" target="_blank" rel="noopener">Rhondda Cynon Taf</a> - Comprehensive pest management for residential and commercial properties.</li>
-                <li><a href="https://www.swansea.gov.uk/" target="_blank" rel="noopener">Swansea</a> - Reliable pest control services to keep your property safe.</li>
-                <li><a href="https://www.breconbeacons.org/" target="_blank" rel="noopener">Brecon</a> - Tailored solutions for pest issues in this beautiful area.</li>
+                <li><a href="https://www.breconbeacons.org/" target="_blank" rel="noopener">Brecon</a> - Comprehensive services for both residential and commercial properties.</li>
+                <li><a href="https://www.aberdareonline.co.uk/" target="_blank" rel="noopener">Aberdare</a> - Quick and efficient responses to pest emergencies.</li>
             </ul>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Welsh Town And Country Pest Services. All Rights Reserved.</p>
-        <p>Contact us at <strong><a href="tel:07375303124">07375 303124</a></strong> or <a class="email-address" id="email-address" href="#" onclick="sendEmail()">Email Me</a>.</p>
+    <footer>
+        <p>For more information, visit our main website: <a href="https://www.welshtownandcountry.co.uk">Welsh Town And Country Pest Services</a> | <a href="https://brecon.welshtownandcountry.co.uk">Brecon Pest Control</a></p>
+        <p>© 2024 Welsh Town And Country Pest Services. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleEmail() {
+            var emailAddress = document.getElementById("email-address");
+            if (emailAddress.style.display === "none") {
+                emailAddress.style.display = "block";
+            } else {
+                emailAddress.style.display = "none";
+            }
+        }
+
+        function sendEmail() {
+            window.location.href = "mailto:info@welshtownandcountry.co.uk";
+        }
+    </script>
 </body>
 
 </html>
