@@ -94,7 +94,7 @@
         <div class="contact-info">
             <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
             <div class="email-toggle" onclick="toggleEmail()">Email Me</div>
-            <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a>
+            <a class="email-address" id="email-link" href="mailto:info@welshtownandcountry.co.uk" style="display: none;">info@welshtownandcountry.co.uk</a>
         </div>
     </header>
 
@@ -123,7 +123,7 @@
                 <li><a href="pest-management">Pest Management</a> - Long-term strategies to keep pests away.</li>
             </ul>
             <h3>Protect Your Property Today!</h3>
-            <p>For reliable pest control services, call us at <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a>. We offer free consultations to discuss your pest control needs.</p>
+            <p>For reliable pest control services, call us at <strong><a href="tel:07375303124">07375 303124</a></strong> or email us at <a class="email-address" id="email-link" href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a>. We offer free consultations to discuss your pest control needs.</p>
         </section>
 
         <section style="text-align: center;">
@@ -142,48 +142,31 @@
                     With a focus on customer satisfaction, we utilize the latest techniques and products to safely manage pest infestations. Whether you face a minor issue or a major infestation, trust Welsh Town And Country Pest Services to provide prompt and professional assistance.
                 </p>
                 <p>
-                    Contact us today for the best <strong>pest control services</strong> in Neath and let us help you reclaim your space!
+                    Contact us today to schedule your pest control service and protect your home or business from unwanted pests.
                 </p>
             </div>
         </section>
-
-        <section>
-            <h2>Our Services</h2>
-            <h3>1. Wasp Nest Removal</h3>
-            <p>We specialize in safely and efficiently removing wasp nests to protect your home and family.</p>
-
-            <h3>2. Rodents</h3>
-            <p>Rats and mice can cause considerable damage to properties and pose health risks. Our rodent control services focus on eliminating infestations and preventing future occurrences.</p>
-
-            <h3>3. Moles</h3>
-            <p>Moles can wreak havoc on gardens and lawns. Our mole-catching services effectively manage these pests, ensuring your outdoor spaces remain intact.</p>
-
-            <h3>4. Insects</h3>
-            <p>We provide targeted treatments for various insects, including ants, cockroaches, and bedbugs. Our insect control services are designed to eradicate infestations and provide peace of mind.</p>
-        </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 Welsh Town And Country Pest Services. All Rights Reserved.</p>
-        <p>Contact us: <strong><a href="tel:07375303124">07375 303124</a></strong> | Email: <a class="email-address" id="info@welshtownandcountry.co.uk" href="#" onclick="sendEmail()">Email Me</a></p>
-        <p>Address: Your Street Address, Neath, SA11 4DP</p>
+    <footer>
+        <div class="footer-content">
+            <h4>Contact Us</h4>
+            <p>Email: <a class="email-address" id="email-link" href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
+            <p>Phone: <a href="tel:07375303124">07375 303124</a></p>
+            <p>Address: Your Street Address, Neath, SA11 4DP, Wales</p>
+        </div>
     </footer>
 
-    <!-- Floating Call Button -->
-    <a href="tel:07375303124" class="floating-call-button">📞CALL NOW</a>
+    <button class="floating-call-button" onclick="window.location.href='tel:07375303124'">📞</button>
 
     <script>
         function toggleEmail() {
-            var emailLink = document.getElementById("info@welshtownandcountry.co.uk");
+            var emailLink = document.getElementById('email-link');
             if (emailLink.style.display === "none") {
-                emailLink.style.display = "inline";
+                emailLink.style.display = "block";
             } else {
                 emailLink.style.display = "none";
             }
-        }
-
-        function sendEmail() {
-            window.location.href = "mailto:info@welshtownandcountry.co.uk";
         }
     </script>
 </body>
