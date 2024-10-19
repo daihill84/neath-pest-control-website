@@ -105,61 +105,35 @@ main {
     padding: 20px;
 }
 
-h2 {
-    color: #ff5722; /* Deep Orange */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
-    text-align: center; /* Center heading */
-}
-
-h3 {
-    color: #00796b; /* Teal */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* 3D effect */
-    text-align: center; /* Center heading */
-}
-
-p {
-    margin: 15px 0;
-    text-align: center; /* Center paragraph text */
-}
-
-/* List Styles */
-ul {
-    padding-left: 20px; /* Indentation for lists */
-    text-align: center; /* Center list items */
-}
-.pest-lists {
-    display: flex;                /* Use flexbox to arrange items side by side */
-    justify-content: space-between; /* Evenly space the pest lists */
-    margin: 20px 0;             /* Add margin for spacing */
-}
-
-.pest-list {
-    flex: 1;                    /* Allow each list to take equal space */
-    margin: 0 10px;            /* Add horizontal margin between lists */
-}
-
-.pest-list h4 {
-    text-align: center;         /* Center the headings */
-}
-
-.pest-list ul {
-    padding: 0;                /* Remove default padding */
-    list-style-type: none;     /* Remove bullet points */
-}
-
-.pest-list li {
-    text-align: center;         /* Center the list items */
-    margin-bottom: 5px;        /* Space between list items */
-}
-
-/* Section Styles */
+/* Pest Coverage Section Styles */
 section {
+    text-align: center; /* Center content */
     background-color: #ffffff; /* White */
     border: 1px solid #ddd; /* Light Grey Border */
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ff5722; /* Deep Orange */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+h3 {
+    color: #00796b; /* Teal */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* 3D effect */
+    margin-top: 20px; /* Space above each subheading */
+    margin-bottom: 10px; /* Space below each subheading */
+}
+
+p {
+    margin: 15px 0; /* Space above and below paragraphs */
+    max-width: 800px; /* Limit width for readability */
+    margin-left: auto; /* Center paragraphs */
+    margin-right: auto; /* Center paragraphs */
 }
 
 /* Footer Styles */
