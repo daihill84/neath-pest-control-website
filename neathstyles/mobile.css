@@ -184,16 +184,19 @@ footer {
     font-size: 14px;
 }
 
+/* Floating Call Button */
 .floating-call-button {
     position: fixed;
     bottom: 15px;
     right: 15px;
-    background-color: #4caf50;
+    background-color: #4caf50; /* Match the navigation color */
     color: white;
     padding: 10px;
     border-radius: 50%;
     text-decoration: none;
     font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+    z-index: 1000; /* Ensure it's on top of other elements */
 }
 
 .call-to-action {
