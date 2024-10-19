@@ -147,6 +147,19 @@ section {
     position: relative;
 }
 
+/* Footer Icon Styles */
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin-bottom: 10px; /* Space between icons and text */
+}
+
+.footer-icons img {
+    height: 40px; /* Adjust icon size */
+    width: 40px;  /* Maintain square dimensions */
+    margin: 0 10px; /* Space between icons */
+}
+
 /* Footer Links */
 .footer a {
     color: #ffb300; /* Amber for links */
