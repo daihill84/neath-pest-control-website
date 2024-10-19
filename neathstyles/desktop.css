@@ -8,7 +8,131 @@ body {
 
 .header {
     background-color: #f8f9fa;
+    padding/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light background color */
+    color: #333;
+}
+
+.header {
+    background: #007bff; /* Header background */
+    color: #fff;
     padding: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px; /* Logo size */
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.phone-number, .email-toggle {
+    font-size: 18px;
+}
+
+.email-address {
+    display: none; /* Initially hide email link */
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navigation {
+    background: #0056b3; /* Navigation background */
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #ffffff; /* Navigation link color */
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #007bff; /* Section headings color */
+}
+
+.services-description {
+    background: #ffffff; /* Services description background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+footer {
+    background: #007bff; /* Footer background */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Floating Call Button */
+.floating-call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.floating-call-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .header, .navigation {
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 80px; /* Adjust logo size for mobile */
+    }
+}: 20px;
     text-align: center;
 }
 
