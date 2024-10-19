@@ -150,15 +150,17 @@ section {
 /* Footer Icon Styles */
 .footer-icons {
     display: flex;
-    justify-content: center; /* Center the icons */
-    margin-bottom: 10px; /* Space between icons and text */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align icons vertically if needed */
+    margin-bottom: 15px; /* Space between icons and footer text */
 }
 
 .footer-icons img {
-    height: 40px; /* Adjust icon size */
-    width: 40px;  /* Maintain square dimensions */
-    margin: 0 10px; /* Space between icons */
+    height: 30px; /* Set a fixed height */
+    width: 30px;  /* Set a fixed width */
+    margin: 0 15px; /* Space between the icons */
 }
+
 
 /* Footer Links */
 .footer a {
