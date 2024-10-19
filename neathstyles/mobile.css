@@ -243,3 +243,22 @@ footer {
         font-size: 16px;
     }
 }
+
+/* Additional Mobile Styles */
+@media (max-width: 320px) {
+    .navigation a {
+        font-size: 14px; /* Smaller text on very small screens */
+    }
+
+    .welcome h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .services h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Smaller footer text */
+    }
+}
