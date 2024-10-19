@@ -147,12 +147,6 @@ footer {
     text-decoration: none; /* No underline */
 }
 
-/* New styles for common pests */
-h5 {
-    margin-top: 20px; /* Space above h5 headings */
-    color: #555; /* Slightly lighter color */
-}
-
 p {
     margin: 10px 0; /* Spacing for paragraphs */
 }
