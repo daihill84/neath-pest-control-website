@@ -49,6 +49,36 @@ main {
     padding: 10px;
 }
 
+h2 {
+    background-color: #f0f0f0; /* Grey background for headings */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.services-description {
+    margin-top: 20px;
+}
+
+.services-description h3 {
+    background-color: #f0f0f0; /* Grey background for service description heading */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.service-box h4 {
+    margin-top: 0;
+}
+
 .floating-call-button {
     position: fixed;
     bottom: 20px;
