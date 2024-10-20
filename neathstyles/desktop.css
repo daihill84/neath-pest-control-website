@@ -33,6 +33,11 @@ body {
     margin-bottom: 10px; /* Space below logo */
 }
 
+.social-icons {
+    display: flex; /* Use flexbox to align icons */
+    margin-left: auto; /* Push social icons to the right */
+}
+
 .social-icon {
     width: 24px; /* Adjust width as needed */
     height: 24px; /* Adjust height as needed */
