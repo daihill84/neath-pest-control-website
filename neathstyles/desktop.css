@@ -1,4 +1,4 @@
-/* General Styles */ 
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -29,6 +29,7 @@ body {
 /* Logo */
 .logo {
     height: 60px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Space below logo */
 }
 
@@ -166,7 +167,7 @@ section {
 .footer-icons {
     display: flex;
     justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Align icons vertically if needed */
+    align-items: center; /* Align icons vertically */
     margin-bottom: 15px; /* Space between icons and footer text */
 }
 
@@ -174,6 +175,7 @@ section {
     height: 30px; /* Set a fixed height */
     width: 30px;  /* Set a fixed width */
     margin: 0 15px; /* Space between the icons */
+    object-fit: contain; /* Ensure the image scales correctly */
 }
 
 /* Footer Links */
@@ -215,5 +217,10 @@ section {
 
     .header, .footer {
         text-align: center;
+    }
+
+    .footer-icons img {
+        height: 25px; /* Adjust height for smaller screens */
+        width: 25px; /* Adjust width for smaller screens */
     }
 }
