@@ -136,6 +136,20 @@ h3 {
     text-align: center; /* Center heading */
 }
 
+.call-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.call-button:hover {
+    background-color: #ff1a1a;
+}
+
 /* Paragraph Styles */
 p {
     margin: 15px 0;
