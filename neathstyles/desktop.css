@@ -142,6 +142,13 @@ p {
     text-align: center; /* Center paragraph text */
 }
 
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px; /* Adjust the size if needed */
+}
+
 /* List Styles */
 ul {
     padding-left: 20px; /* Indentation for lists */
