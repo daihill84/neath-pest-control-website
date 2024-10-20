@@ -33,6 +33,18 @@ body {
     margin-bottom: 10px; /* Space below logo */
 }
 
+.social-icon {
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+    margin: 0 5px; /* Spacing between icons */
+    vertical-align: middle; /* Align icons with text */
+    transition: transform 0.2s; /* Optional: add a hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Optional: slightly enlarge on hover */
+}
+
 /* Company Name */
 .company-name {
     font-size: 1.8em;
