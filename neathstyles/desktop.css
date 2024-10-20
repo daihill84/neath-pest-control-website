@@ -172,10 +172,15 @@ section {
 }
 
 .footer-icons img {
-    height: 30px; /* Set a fixed height */
-    width: 30px;  /* Set a fixed width */
+    height: 40px; /* Set a fixed height for social icons */
+    width: 40px;  /* Set a fixed width for social icons */
     margin: 0 15px; /* Space between the icons */
-    object-fit: contain; /* Ensure the image scales correctly */
+}
+
+/* Set max size for all images */
+img {
+    max-width: 100px; /* Set a maximum width for all images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Footer Links */
@@ -220,7 +225,11 @@ section {
     }
 
     .footer-icons img {
-        height: 25px; /* Adjust height for smaller screens */
-        width: 25px; /* Adjust width for smaller screens */
+        height: 35px; /* Adjust height for smaller screens */
+        width: 35px; /* Adjust width for smaller screens */
+    }
+
+    img {
+        max-width: 80px; /* Smaller images on smaller screens */
     }
 }
