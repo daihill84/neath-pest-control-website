@@ -28,6 +28,11 @@ body {
     margin-bottom: 20px; /* Space below each list */
 }
 
+.list ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove indentation */
+}
+
 h3 {
     margin-bottom: 10px; /* Space below the heading */
 }
