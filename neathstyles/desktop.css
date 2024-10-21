@@ -17,6 +17,21 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
+.insect-lists {
+    display: flex;
+    justify-content: space-between; /* Space between lists */
+    flex-wrap: wrap; /* Wraps lists on smaller screens */
+}
+
+.list {
+    width: 48%; /* Adjusts width for each list */
+    margin-bottom: 20px; /* Space below each list */
+}
+
+h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
 /* Logo Container */
 .logo-container {
     display: flex;
