@@ -182,6 +182,7 @@ p {
 ul {
     padding-left: 20px; /* Indentation for lists */
     text-align: center; /* Center list items */
+    list-style-type: none;
 }
 
 /* Section Styles */
