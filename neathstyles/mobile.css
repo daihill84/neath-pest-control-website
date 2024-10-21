@@ -73,6 +73,21 @@ body {
     color: #fff; /* Ensuring text color stays readable */
 }
 
+.insect-lists {
+    display: flex;
+    justify-content: space-between; /* Space between lists */
+    flex-wrap: wrap; /* Wraps lists on smaller screens */
+}
+
+.list {
+    width: 48%; /* Adjusts width for each list */
+    margin-bottom: 20px; /* Space below each list */
+}
+
+h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
 /* New styles for common pests */
 h5 {
     text-align: center; /* Center align the h5 headings */
