@@ -211,13 +211,17 @@
     <a href="tel:07375303124" class="floating-call-button">Call Us</a>
 
     <script>
+    // Wait for the DOM to fully load
+    document.addEventListener('DOMContentLoaded', function() {
         // Toggle email visibility
-        document.getElementById('email-link').addEventListener('click', function (event) {
+        document.getElementById('email-link').addEventListener('click', function(event) {
             event.preventDefault();
             var emailAddress = document.getElementById('email-address');
             emailAddress.style.display = emailAddress.style.display === 'block' ? 'none' : 'block';
         });
-    </script>
+    });
+</script>
+
 </body>
 
 </html>
