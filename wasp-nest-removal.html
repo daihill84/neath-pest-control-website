@@ -174,24 +174,7 @@
 
     <a href="tel:07375303124" class="floating-call-button">Call</a>
 
-    <script>
-        // Function to toggle email address visibility
-        const emailLink = document.getElementById('email-link');
-        const emailAddress = document.getElementById('email-address');
-        const atSymbol = document.getElementById('at-symbol');
-        const dot = document.getElementById('dot');
-        const dotUK = document.getElementById('dot-uk');
 
-        emailLink.addEventListener('click', function (event) {
-            event.preventDefault();
-            emailAddress.classList.toggle('visible');
-        });
-
-        function sendEmail() {
-            const email = `info${atSymbol.innerText}welshtownandcountry${dot.innerText}co${dotUK.innerText}`;
-            window.location.href = `mailto:${email}`;
-        }
-    </script>
 </body>
 
 </html>
