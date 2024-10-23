@@ -220,19 +220,24 @@ fbq('track', 'Purchase', {
     </div>
 </footer>
 
-    <!-- Floating Call Button -->
-    <a href="tel:07375303124" class="floating-call-button">📞CALL NOW</a>
+       <!-- Floating Call Button -->
+    <a href="tel:07375303124" class="floating-call-button">📞</a>
 
     <script>
+        // Function to toggle email display
         function toggleEmail() {
-            const emailElement = document.getElementById('email-address');
-            emailElement.style.display = emailElement.style.display === 'none' ? 'block' : 'none';
+            var email = document.getElementById("email-address");
+            if (email.style.display === "none") {
+                email.style.display = "block";
+            } else {
+                email.style.display = "none";
+            }
         }
 
+        // Function to open email client
         function sendEmail() {
-            window.location.href = 'mailto:info@welshtownandcountry.co.uk';
+            window.location.href = "mailto:info@welshtownandcountry.co.uk";
         }
     </script>
 </body>
-
 </html>
