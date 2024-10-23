@@ -28,6 +28,7 @@ body {
     margin-bottom: 20px; /* Space below each list */
 }
 
+/* Style for unordered list within each list */
 .list ul {
     list-style-type: none; /* Remove bullets */
     padding-left: 0; /* Remove indentation */
