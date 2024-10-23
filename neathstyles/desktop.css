@@ -55,7 +55,10 @@ h3 {
 
 .social-icons {
     display: flex; /* Use flexbox to align icons */
-    margin-left: auto; /* Push social icons to the right */
+    justify-content: center; /* Center the icons horizontally */
+    margin-left: auto; /* This can be removed if centering */
+    margin-right: auto; /* Center the container itself */
+    padding: 10px; /* Optional: add padding for spacing */
 }
 
 .social-icon {
@@ -66,9 +69,11 @@ h3 {
     transition: transform 0.2s; /* Optional: add a hover effect */
 }
 
+/* Optional: Add a hover effect for the icons */
 .social-icon:hover {
-    transform: scale(1.1); /* Optional: slightly enlarge on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
+
 
 /* Company Name */
 .company-name {
