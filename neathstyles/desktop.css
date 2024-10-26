@@ -178,7 +178,7 @@ p {
 .center-image {
     display: block;
     margin: 0 auto;
-    width: 150px;
+    max-width: 150px; /* Changed to max-width for better responsiveness */
 }
 
 /* Image Gallery */
@@ -186,11 +186,6 @@ p {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.center-image {
-    width: 150px;
-    height: auto;
 }
 
 /* List Styles */
@@ -247,7 +242,7 @@ section {
 
 /* Max size for images */
 img {
-    max-width: 100px;
+    max-width: 100px; /* Limit image size to 100px */
     height: auto;
 }
 
@@ -294,6 +289,10 @@ img {
     }
 
     img {
-        max-width: 80px;
+        max-width: 80px; /* Adjust max width for mobile devices */
+    }
+
+    .center-image {
+        max-width: 100px; /* Adjusted for mobile responsiveness */
     }
 }
