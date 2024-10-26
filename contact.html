@@ -10,9 +10,10 @@
     <meta name="description" content="Contact Welsh Town And Country Pest Services for professional pest control, mole catching, insect control, and pet microchipping in Neath, Port Talbot, Brecon, and surrounding areas.">
     <meta property="og:title" content="Contact Us | Welsh Town And Country Pest Services">
     <meta property="og:description" content="Reach out to Welsh Town And Country Pest Services for expert pest control services, including wasp removal, mole catching, and dog sitting.">
-    meta property="og:image" content="https://neath.welshtownandcountry.co.uk/neathimages/logo.png">
+    <meta property="og:image" content="https://neath.welshtownandcountry.co.uk/neathimages/logo.png">
     <meta property="og:url" content="https://neath.welshtownandcountry.co.uk/contact">
-    
+    <meta name="keywords" content="pest control, Neath pest control, mole catching, wasp removal, insect control, dog sitting, pet microchipping">
+
     <!-- JSON-LD Structured Data for Geotags -->
     <script type="application/ld+json">
     {
@@ -31,8 +32,8 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "51.6852",   // Replace with your actual latitude
-        "longitude": "-3.7737"    // Replace with your actual longitude
+        "latitude": "51.6852",
+        "longitude": "-3.7737"
       },
       "url": "https://neath.welshtownandcountry.co.uk/contact",
       "sameAs": "https://www.facebook.com/profile.php?id=61564861332160"
@@ -90,14 +91,7 @@
             height: auto;       /* Maintains the aspect ratio */
             max-height: 300px;  /* Limits the maximum height */
         }
-    </style
-        <script>
-fbq('track', 'Purchase', {
-    value: 30.00,
-    currency: 'USD'
-});
-</script>
-
+    </style>
 </head>
 
 <body>
@@ -113,7 +107,7 @@ fbq('track', 'Purchase', {
         </div>
     </header>
     
-     <nav class="navigation">
+    <nav class="navigation">
         <ul>
             <li><a href="index">Home</a></li>
             <li><a href="wasp-nest-removal">Wasp Nest Removal</a></li>
@@ -169,5 +163,25 @@ fbq('track', 'Purchase', {
     </footer>
 
     <div class="floating-call-button" onclick="window.location.href='tel:07375303124'">📞</div>
+
+    <script>
+        function toggleEmail() {
+            const emailLink = document.getElementById('email-address');
+            if (emailLink.style.display === "none" || emailLink.style.display === "") {
+                emailLink.style.display = "block";
+            } else {
+                emailLink.style.display = "none";
+            }
+        }
+
+        function sendEmail() {
+            window.location.href = 'mailto:info@welshtownandcountry.co.uk';
+        }
+
+        fbq('track', 'Purchase', {
+            value: 30.00,
+            currency: 'USD'
+        });
+    </script>
 </body>
 </html>
