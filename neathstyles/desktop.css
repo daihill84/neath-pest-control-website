@@ -231,7 +231,7 @@ section {
     background-color: #004d40;
     color: white;
     text-align: center;
-    padding: 5px; /* Reduced padding for a smaller footer */
+    padding: 2px; /* Reduced padding for a smaller footer */
     position: relative;
 }
 
