@@ -17,23 +17,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Insect List Styles */
-.insect-lists {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.list {
-    width: 32%;
-    margin-bottom: 20px;
-}
-
-.list h3 {
-    margin-top: 0;
-}
-
 /* Logo Container */
 .logo-container {
     display: flex;
@@ -47,24 +30,6 @@ body {
     height: 60px;
     width: auto;
     margin-bottom: 10px;
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.2s;
-}
-
-.social-icon:hover {
-    transform: scale(1.1);
 }
 
 /* Company Name */
@@ -140,6 +105,23 @@ main {
     padding: 20px;
 }
 
+/* Insect List Styles */
+.insect-lists {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.list {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.list h3 {
+    margin-top: 0;
+}
+
 /* Heading Styles */
 h2 {
     color: #ff5722;
@@ -150,6 +132,12 @@ h2 {
 h3 {
     color: #00796b;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 15px 0;
     text-align: center;
 }
 
@@ -166,12 +154,6 @@ h3 {
 
 .call-button:hover {
     background-color: #ff1a1a;
-}
-
-/* Paragraph Styles */
-p {
-    margin: 15px 0;
-    text-align: center;
 }
 
 /* Centered Images */
