@@ -120,7 +120,7 @@ main {
 
 .list centre h3 {
     margin-top: 0;
-  }  
+}  
 
 .list {
     width: 32%;
@@ -130,6 +130,7 @@ main {
 .list h3 {
     margin-top: 0;
 }
+
 /* Insect link buttons Styles */
 .button1 {
     display: inline-block;
@@ -147,7 +148,6 @@ main {
     background-color: #e68a00; /* Darker orange on hover */
     transform: translateY(-2px); /* Lift effect */
 }
-
 
 /* Heading Styles */
 h2 {
@@ -238,15 +238,15 @@ section {
 /* Footer Icons */
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centering the icons */
     align-items: center;
-    gap: 15px;
+    gap: 10px; /* Space between icons */
     margin-bottom: 15px;
 }
 
 .social-icons img {
-    height: 40px;
-    width: 40px;
+    height: 30px; /* Set the desired height */
+    width: 30px; /* Set the desired width */
 }
 
 /* Max size for images */
@@ -292,9 +292,9 @@ img {
         width: 100%;
     }
 
-    .footer-icons img {
-        height: 35px;
-        width: 35px;
+    .social-icons img {
+        height: 30px; /* Consistent height for mobile */
+        width: 30px; /* Consistent width for mobile */
     }
 
     img {
