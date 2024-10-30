@@ -236,7 +236,7 @@ section {
 }
 
 /* Footer Icons */
-.footer-icons {
+.social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +244,7 @@ section {
     margin-bottom: 15px;
 }
 
-.footer-icons img {
+.social-icons img {
     height: 40px;
     width: 40px;
 }
