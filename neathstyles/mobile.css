@@ -280,7 +280,7 @@ footer {
         font-size: 18px; /* Adjust heading size */
     }
 
-    .footer-content p {
+    footer p {
         font-size: 12px; /* Smaller footer text */
     }
 }
