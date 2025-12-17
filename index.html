@@ -52,7 +52,6 @@
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
         
-        /* CONVERSION PULSE ANIMATION */
         @keyframes pulse {
             0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
             70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(211, 47, 47, 0); }
@@ -60,15 +59,9 @@
         }
 
         .pulse-btn {
-            background-color: var(--red);
-            color: white;
-            padding: 20px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.4rem;
-            display: inline-block;
-            animation: pulse 2s infinite;
+            background-color: var(--red); color: white; padding: 20px 40px;
+            border-radius: 50px; text-decoration: none; font-weight: bold;
+            font-size: 1.4rem; display: inline-block; animation: pulse 2s infinite;
         }
 
         .floating-call-button {
@@ -98,6 +91,7 @@
         }
 
         .grid-item { background: #fff; padding: 10px; border-radius: 8px; border: 1px solid #ddd; }
+        .grid-item a { text-decoration: none; color: var(--dark); font-weight: bold; }
 
         @media (max-width: 768px) {
             .mobile-sticky-bar { display: block; }
@@ -111,7 +105,7 @@
     <header class="header" style="background:var(--green); color:white; padding:1.5rem; text-align:center; border-bottom:5px solid var(--gold);">
         <img src="neathimages/logo.png" alt="Welsh Town and Country Pest Services Neath" class="logo" style="max-height:70px;">
         <h1>Pest Control Neath Wales</h1>
-        <p style="font-weight:bold; font-size:1.2rem;">24/7 Specialist Response — <a href="tel:07375303124" style="color:var(--gold);">07375 303124</a></p>
+        <p style="font-weight:bold; font-size:1.2rem;">24/7 Specialist Response — <a href="tel:07375303124" style="color:var(--gold); text-decoration: none;">07375 303124</a></p>
     </header>
     
     <nav class="navigation" style="background:var(--dark); text-align:center;">
@@ -128,17 +122,17 @@
             <div style="background:var(--gold); padding:10px; font-weight:bold; border-radius:5px; margin-bottom:20px;">
                 🚨 COUNCIL ALTERNATIVE: Don't wait weeks for NPT council. We offer same-day private response.
             </div>
-            <h2>Local Experts in the Neath Valley</h2>
-            <p>Welsh Town and Country Pest Services provides professional <strong>Ex-Pestokil trained</strong> pest control throughout Neath. We specialize in <strong>SA10 and SA11</strong> area emergencies, offering a faster alternative to local authority services.</p>
+            <h2>Ex-Pestokil Trained Technicians in the Neath Valley</h2>
+            <p>Welsh Town and Country Pest Services provides professional <strong>National-Standard</strong> pest control throughout Neath. We specialize in <strong>SA10 and SA11</strong> area emergencies, offering a faster alternative to local authority services with unmarked vehicle privacy.</p>
             
             <a href="tel:07375303124" class="pulse-btn">📞 CALL IAN: 07375 303124</a>
         </section>
 
         <section class="landmark-box">
-            <h2>Geographic Authority in Neath Port Talbot</h2>
-            <p>From the urban streets near <strong>Victoria Gardens</strong> to the historical ruins of <strong>Neath Abbey</strong>, our technicians are anchored in the local community. We cover the entire valley corridor, including <strong>The Gnoll Country Park</strong> area and the high reaches of the Neath Valley.</p>
+            <h2>Geographic Authority: Neath & Surrounds</h2>
+            <p>From the streets near <strong>Victoria Gardens</strong> to the historical ruins of <strong>Neath Abbey</strong>, our technicians are anchored in the local community. We cover the entire valley corridor, including <strong>The Gnoll Country Park</strong> area and the high reaches of the Neath Valley.</p>
             <ul class="area-list" style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; list-style:none; padding:0;">
-                <li>📍 <strong>Neath Town Center (SA11)</strong></li>
+                <li>📍 <strong>Neath Town (SA11)</strong></li>
                 <li>📍 <strong>Skewen (SA10)</strong></li>
                 <li>📍 <strong>Glynneath & Banwen</strong></li>
                 <li>📍 <strong>Resolven & Clyne</strong></li>
@@ -150,21 +144,21 @@
         
 
         <section>
-            <h2>Our Core Specialist Services</h2>
+            <h2>Specialist Agricultural & Domestic Solutions</h2>
             <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
                 <div style="padding:15px; border-left:5px solid var(--red); background:#f9f9f9;">
                     <h3>Rodent Control</h3>
-                    <p>Professional rat and mouse trapping. <strong>Red Tractor compliant</strong> for local farms.</p>
+                    <p>Professional rat and mouse trapping. <strong>Red Tractor compliant</strong> documentation for local farms and smallholdings.</p>
                 </div>
                 <div style="padding:15px; border-left:5px solid var(--green); background:#f9f9f9;">
                     <h3>Traditional Moles</h3>
-                    <p>Poison-free mechanical trapping for gardens and pastures in Resolven and beyond.</p>
+                    <p>Poison-free mechanical trapping for gardens and pastures. Perfect for equine fields and family lawns.</p>
                 </div>
             </div>
         </section>
 
         <section class="service-grid-global" style="background:#f4f4f4; padding:2rem; margin:2rem 0; border-radius:12px;">
-            <h3 style="grid-column: 1 / -1;">Full Neath Valley Specialist Coverage</h3>
+            <h3 style="grid-column: 1 / -1; text-align: center; margin-top: 0;">Full Neath Valley Specialist Coverage</h3>
             <div class="grid-item"><strong>Rodents</strong><br><a href="neath-rodent-control">Rats & Mice</a></div>
             <div class="grid-item"><strong>Insects</strong><br><a href="wasp-nest-removal">Wasps & Bees</a></div>
             <div class="grid-item"><strong>Specialist</strong><br><a href="mole-catching">Mole Trapping</a></div>
@@ -174,7 +168,7 @@
 
     <footer class="footer" style="background:var(--dark); color:white; text-align:center; padding:2rem;">
         <p>&copy; 2026 Welsh Town And Country Pest Services. Neath Wales Hub.</p>
-        <p>Direct Line: <a href="tel:07375303124" style="color:var(--gold);">07375 303124</a></p>
+        <p>Direct Line: <a href="tel:07375303124" style="color:var(--gold); text-decoration: none;">07375 303124</a></p>
         <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=61564861332160"><img src="neathimages/facebook_logo.png" alt="Facebook" width="30"></a>
             <a href="https://www.instagram.com/welshtownandcountry.co.uk/"><img src="neathimages/Instagram_icon.png" alt="Instagram" width="30"></a>
