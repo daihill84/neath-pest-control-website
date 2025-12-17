@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional rodent control in Neath and Neath Valley. Specializing in rat catching, mouse removal, and farm pest management. Red Tractor friendly solutions. Call 07375 303124.">
-    <meta name="keywords" content="rodent control Neath, rat catcher Neath, mouse removal Neath, Glynneath pest control, Resolven rat control, Skewen mouse removal, farm rodent control Neath, Red Tractor pest control Wales">
+    
+    <title>Rodent Control Neath Wales | SA10 & SA11 Rat Catcher | 24/7 Response</title>
+
+    <meta name="description" content="Professional rodent control in Neath and Neath Valley. Ex-Pestokil trained specialist for rat catching, mouse removal, and farm pest management. SA10 & SA11 response. Call 07375 303124.">
+    <meta name="keywords" content="rodent control Neath Wales, rat catcher Neath SA11, mouse removal Neath SA10, Glynneath rat catcher, Resolven rodent removal, Skewen mouse control, farm rodent control Neath, Red Tractor pest control Wales">
     
     <meta name="geo.region" content="GB-WLS">
     <meta name="geo.placename" content="Neath">
@@ -17,14 +20,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     <link rel="canonical" href="https://neath.welshtownandcountry.co.uk/neath-rodent-control">
-    <title>Rodent Control Neath | Rat & Mouse Removal | Welsh Town And Country</title>
-    
     <link rel="icon" href="neathimages/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="neathstyles/desktop.css">
     <link rel="stylesheet" href="neathstyles/mobile.css" media="only screen and (max-width: 900px)">
     
-    <meta property="og:title" content="Rodent Control Neath | Professional Rat & Mouse Removal" />
-    <meta property="og:description" content="Expert rodent control services in Neath, specializing in rat and mouse infestations for homes and farms." />
+    <meta property="og:title" content="Rodent Control Neath Wales | Professional Rat & Mouse Removal" />
+    <meta property="og:description" content="Expert rodent control services in Neath. Ex-Pestokil trained for rat and mouse infestations in SA10 & SA11." />
     <meta property="og:image" content="https://neath.welshtownandcountry.co.uk/neathimages/logo.png" />
     <meta property="og:url" content="https://neath.welshtownandcountry.co.uk/neath-rodent-control" /> 
     <meta property="og:type" content="website" />
@@ -45,131 +46,154 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Welsh Town And Country Pest Services (Neath Branch)",
+            "@type": "PestControlService",
+            "name": "Welsh Town And Country Rodent Specialist",
             "image": "https://neath.welshtownandcountry.co.uk/neathimages/logo.png",
-            "telephone": "07375 303124",
-            "email": "info@welshtownandcountry.co.uk",
+            "telephone": "07375303124",
+            "url": "https://neath.welshtownandcountry.co.uk/neath-rodent-control",
+            "description": "Ex-Pestokil trained specialist in rodent control. Serving Neath, Glynneath, and SA10/SA11 area.",
+            "areaServed": ["Neath", "Glynneath", "Skewen", "Resolven", "SA10", "SA11", "SA8"],
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Neath",
                 "addressRegion": "West Glamorgan",
-                "postalCode": "SA11 4DP",
-                "streetAddress": "11 Glynneath Road"
-            },
-            "url": "https://neath.welshtownandcountry.co.uk/neath-rodent-control",
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 51.7210854,
-                "longitude": -3.7953355
-            },
-            "openingHours": "Mo-Su 00:00-23:59",
-            "description": "Expert rodent control in Neath and Neath Valley. Specialized in Red Tractor compliant rat and mouse management for homes and agriculture."
+                "addressCountry": "GB"
+            }
         }
     </script>
 
     <style>
-        .floating-call-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #28a745; /* Changed to Green to match Pest Control branding */
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            text-align: center;
-            font-size: 24px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
+        :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
+        
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(211, 47, 47, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
         }
-        .center-image { display: block; margin: 0 auto; width: 60%; border-radius: 8px; }
+
+        .pulse-btn {
+            background-color: var(--red); color: white; padding: 20px 40px;
+            border-radius: 50px; text-decoration: none; font-weight: bold;
+            font-size: 1.4rem; display: inline-block; animation: pulse 2s infinite;
+        }
+
+        .floating-call-button {
+            position: fixed; bottom: 85px; right: 20px;
+            background-color: var(--red); color: white;
+            border-radius: 50%; width: 65px; height: 65px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 9999; text-decoration: none; animation: pulse 2s infinite;
+        }
+
+        .mobile-sticky-bar {
+            position: fixed; bottom: 0; width: 100%; background: var(--red);
+            color: #fff; text-align: center; height: 60px; line-height: 60px;
+            font-size: 1.4rem; font-weight: bold; text-decoration: none;
+            z-index: 1000; border-top: 2px solid var(--gold); display: none;
+        }
+
+        .landmark-box {
+            background: #eef6ee; padding: 1.5rem; border-radius: 10px;
+            border: 1px solid #c8e6c9; margin: 2rem 0;
+        }
+
+        .grid-global {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px; margin-top: 20px;
+        }
+
+        .grid-item { background: #fff; padding: 12px; border-radius: 8px; border: 1px solid #ddd; text-align: center; }
+        .grid-item a { text-decoration: none; color: var(--dark); font-weight: bold; }
+
+        @media (max-width: 768px) { .mobile-sticky-bar { display: block; } }
     </style>
 </head>
 
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCN4VDL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <header class="header">
-        <div class="logo-container">
-            <img src="neathimages/logo.png" alt="Welsh Town And Country Pest Services Logo" class="logo">
-            <div class="company-name">Welsh Town And Country Pest Services</div>
-            <h1>Rodent Control in Neath & The Neath Valley</h1>
-        </div>
-        <div class="contact-info">
-            <div class="phone-number"><a href="tel:07375303124">07375 303124</a></div>
-            <div class="email-info">
-                <a href="mailto:info@welshtownandcountry.co.uk">EMAIL US</a>
-            </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank"><img src="neathimages/facebook_logo.png" alt="Facebook" class="social-icon"></a>
-                <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank"><img src="neathimages/Instagram_icon.png" alt="Instagram" class="social-icon"></a>
-            </div>
-        </div>
+    <header class="header" style="background:var(--green); color:white; padding:1.5rem; text-align:center; border-bottom:5px solid var(--gold);">
+        <img src="neathimages/logo.png" alt="Welsh Town And Country Pest Services Logo" class="logo" style="max-height:70px;">
+        <div class="company-name">Welsh Town And Country Pest Services</div>
+        <h1>Rodent Control Neath Wales</h1>
+        <p style="font-weight:bold; font-size:1.2rem;">24/7 Emergency Service — <a href="tel:07375303124" style="color:var(--gold); text-decoration: none;">07375 303124</a></p>
     </header>
     
-    <nav class="navigation">
-        <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="wasp-nest-removal">Wasp Nest Removal</a></li>
-            <li><a href="neath-rodent-control" class="active">Rodent Control</a></li>
-            <li><a href="mole-catching">Mole Catching</a></li>
-            <li><a href="contact">Contact</a></li>
+    <nav class="navigation" style="background:var(--dark); text-align:center;">
+        <ul style="list-style:none; padding:10px; margin:0; display:flex; justify-content:center; gap:20px;">
+            <li><a href="index" style="color:white; text-decoration:none; font-weight:bold;">Home</a></li>
+            <li><a href="wasp-nest-removal" style="color:white; text-decoration:none; font-weight:bold;">Wasps</a></li>
+            <li><a href="neath-rodent-control" class="active" style="color:var(--gold); text-decoration:none; font-weight:bold;">Rodent Control</a></li>
+            <li><a href="mole-catching" style="color:white; text-decoration:none; font-weight:bold;">Mole Catching</a></li>
+            <li><a href="contact" style="color:white; text-decoration:none; font-weight:bold;">Contact</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main style="max-width:1100px; margin:auto; padding:20px;">
         <article>
-            <section>
-                <h2>Expert Rodent Control Services in Neath</h2>
-                <p>Dealing with <strong>rats</strong> or <strong>mice</strong>? Welsh Town and Country provides professional <strong>rodent control in Neath</strong>, Glynneath, Resolven, Skewen, and all surrounding valley areas. Our technicians are available 24/7 to safeguard your home or business.</p>
-                <img src="neathimages/rat-Pest.jpg" alt="Professional Rodent Control Neath" class="center-image">
-                <p>Rodents pose significant health risks, spreading diseases such as <em>Salmonella</em> and <em>Leptospirosis</em>. Beyond health, they cause structural damage by gnawing through electrical wiring and woodwork. Prompt action is vital to prevent an infestation from growing.</p>
+            <section style="text-align:center;">
+                <h2>Ex-Pestokil Trained Rodent Removal</h2>
+                <p>Don't wait weeks for the council. We provide professional <strong>National-Standard</strong> rodent control across Neath and the Neath Valley. Faster, discreet, and 100% guaranteed.</p>
+                <a href="tel:07375303124" class="pulse-btn">📞 CALL IAN: 07375 303124</a>
             </section>
+
+            <section class="landmark-box">
+                <h3>Serving Neath, SA10 & SA11</h3>
+                <p>From the urban streets near <strong>Victoria Gardens</strong> to the historically sensitive areas around <strong>Neath Abbey</strong>, our rodent services are anchored in local knowledge. We cover <strong>Skewen</strong>, <strong>Glynneath</strong>, and all surrounding valley rural areas.</p>
+            </section>
+
+            
 
             <section>
                 <h3>Our 4-Step Rodent Solution</h3>
+                <p>Rodents in the Neath Valley cause significant health risks and structural damage. We use the same methods I mastered at the UK's leading pest firm to clear your property fast.</p>
                 <ul>
-                    <li><strong>1. Professional Inspection:</strong> Identifying entry points and nesting sites.</li>
-                    <li><strong>2. Targeted Treatment:</strong> Safe, effective removal using traps or Red Tractor approved rodenticides.</li>
-                    <li><strong>3. Proofing & Exclusion:</strong> Sealing holes and gaps to prevent rodents from returning.</li>
-                    <li><strong>4. Expert Advice:</strong> Practical tips to keep your property rodent-free long-term.</li>
+                    <li><strong>1. Professional Inspection:</strong> Identifying entry points near drains or lofts.</li>
+                    <li><strong>2. Targeted Treatment:</strong> Poison-free trapping or Red Tractor approved management.</li>
+                    <li><strong>3. Proofing:</strong> Sealing gaps with wire wool and professional mastic to stop re-entry.</li>
+                    <li><strong>4. Prevention:</strong> Educating you on how to stop rodents returning to your garden or kitchen.</li>
                 </ul>
             </section>
 
             <section>
-                <h3>Specialized Agricultural & Domestic Services</h3>
-                <ul>
-                    <li><a href="neath-rodent-control"><strong>Rat Catcher Services:</strong></a> Rapid response for rat activity in gardens, lofts, or farm buildings.</li>
-                    <li><a href="neath-rodent-control"><strong>Mouse Removal:</strong></a> Humane and efficient techniques to clear mice from kitchens and commercial spaces.</li>
-                    <li><strong>Red Tractor Compliance:</strong> Specialist pest management for local Neath Valley farms.</li>
-                </ul>
+                <h3>Agricultural & Domestic Expertise</h3>
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
+                    <div style="padding:15px; border-left:5px solid var(--red); background:#f9f9f9;">
+                        <h4>Rat Catcher Neath</h4>
+                        <p>Rapid response for rats in gardens, lofts, or wall cavities. Unmarked vehicles for your privacy.</p>
+                    </div>
+                    <div style="padding:15px; border-left:5px solid var(--green); background:#f9f9f9;">
+                        <h4>Farm Assurance</h4>
+                        <p><strong>Red Tractor Compliant</strong> pest management for Neath Valley farms and smallholdings.</p>
+                    </div>
+                </div>
             </section>
 
-            <section>
-                <h3>Service Areas in Neath Valley</h3>
-                <p>We provide rapid response to:</p>
-                <p>📍 Neath Town Center • Glynneath • Resolven • Skewen • Briton Ferry • Tonna • Cimla • Crynant</p>
-                <br>
-                <p>Also covering neighboring regions:</p>
-                <ul>
-                    <li><a href="https://brecon.welshtownandcountry.co.uk">🏡 Brecon Pest Control</a></li>
-                    <li><a href="https://merthyr.welshtownandcountry.co.uk">🏡 Merthyr Pest Control</a></li>
-                </ul>
+            <section style="background:#f4f4f4; padding:2rem; margin:2rem 0; border-radius:12px;">
+                <h3 style="text-align: center; margin-top: 0;">Full Neath Valley Service Links</h3>
+                <div class="grid-global">
+                    <div class="grid-item"><a href="index">Home</a></div>
+                    <div class="grid-item"><a href="wasp-nest-removal">Wasps</a></div>
+                    <div class="grid-item"><a href="mole-catching">Moles</a></div>
+                    <div class="grid-item"><a href="insect-control">Insects</a></div>
+                    <div class="grid-item"><a href="pest-management">Compliance</a></div>
+                </div>
             </section>
         </article>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Welsh Town And Country Pest Services | All Rights Reserved</p>
+    <footer style="background:var(--dark); color:white; text-align:center; padding:2rem; margin-top: 2rem;">
+        <p>&copy; 2026 Welsh Town And Country Pest Services | Neath Hub (SA11)</p>
+        <p>Serving Neath, Skewen, Glynneath & the Neath Valley.</p>
+        <div style="margin-top: 15px;">
+            <a href="https://www.facebook.com/profile.php?id=61564861332160"><img src="neathimages/facebook_logo.png" alt="Facebook" width="30"></a>
+            <a href="https://www.instagram.com/welshtownandcountry.co.uk/"><img src="neathimages/Instagram_icon.png" alt="Instagram" width="30"></a>
+        </div>
     </footer>
 
     <a href="tel:07375303124" class="floating-call-button">📞</a>
+    <a href="tel:07375303124" class="mobile-sticky-bar">📞 Call Now: 07375 303124</a>
 
 </body>
 </html>
