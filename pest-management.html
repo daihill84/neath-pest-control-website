@@ -1,193 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Pest Management Subscription Packages | Welsh Town And Country</title>
+    <title>Pest Management Subscriptions Neath | David: Ex-Pestokil Specialist</title>
+    
     <link rel="icon" href="neathimages/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="neathstyles/desktop.css">
     <link rel="stylesheet" href="neathstyles/mobile.css" media="only screen and (max-width: 900px)">
-    <meta name="description" content="Explore our pest management subscription packages for routine checkups, including humane and effective pest control services in Neath.">
-    <meta name="keywords" content="Pest Control, Subscription Packages, Pest Management, Neath, Port Talbot, Brecon, Merthyr, Wasp Removal, Rodent Control, Mole Catching">
+    
+    <meta name="description" content="Professional pest management subscriptions in Neath by David, an Ex-Pestokil specialist. Fixed-price routine checkups for Neath homes, farms & businesses. Call 07375 303124.">
+    <meta name="keywords" content="pest control subscription Neath, David pest control SA11, pest management Neath Valley, farm audit pest control, rodent management Skewen, Glynneath pest contracts">
     <meta name="author" content="Welsh Town And Country Pest Services">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Pest Management Subscription Packages | Welsh Town And Country Pest Services">
-    <meta property="og:description" content="Get routine pest management checkups with our subscription packages. Serving Neath, Port Talbot, Brecon, Merthyr, and surrounding areas.">
-    <meta property="og:image" content="https://neath.welshtownandcountry.co.uk/neathimages/rat2.jpg" />
-    <meta property="og:url" content="https://www.welshtownandcountry.co.uk/pest-management">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Welsh Town And Country Pest Services">
-    <meta property="og:locale" content="en_GB">
+    <link rel="canonical" href="https://neath.welshtownandcountry.co.uk/pest-management">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pest Management Subscription Packages | Welsh Town And Country Pest Services">
-    <meta name="twitter:description" content="Get routine pest management checkups with our subscription packages. Serving Neath, Port Talbot, Brecon, Merthyr, and surrounding areas.">
-    <meta name="twitter:image" content="https://neath.welshtownandcountry.co.uk/neathimages/rat2.jpg">
-
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PBCN4VDL');
-    </script>
-
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Welsh Town And Country Pest Services",
+        "@type": "PestControlService",
+        "name": "Welsh Town And Country Pest Management – David (Neath)",
         "image": "https://neath.welshtownandcountry.co.uk/neathimages/logo.png",
         "telephone": "07375 303124",
-        "email": "info@welshtownandcountry.co.uk",
+        "url": "https://neath.welshtownandcountry.co.uk/pest-management",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Neath",
+            "addressLocality": "Resolven",
             "addressRegion": "Wales",
             "postalCode": "SA11 4DP",
             "streetAddress": "11 Glynneath Road"
         },
-        "url": "https://neath.welshtownandcountry.co.uk",
-        "sameAs": [
-            "https://www.facebook.com/profile.php?id=61564861332160",
-            "https://www.instagram.com/welshtownandcountry.co.uk/"
-        ],
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 51.7210854,
-            "longitude": -3.7953355
-        },
-        "openingHours": "Mo-Su 24/7",
-        "description": "Expert pest control services in Neath, including humane solutions for wasps, rodents, and moles."
+        "areaServed": ["Neath SA11", "Skewen SA10", "Glynneath", "Resolven", "Seven Sisters", "Crynant"],
+        "description": "David: Ex-Pestokil trained specialist providing fixed-price pest management subscriptions for Neath homes, farms, and businesses."
     }
     </script>
 
     <style>
-        /* Floating Call Button */
+        :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
+        
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(211, 47, 47, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+        }
+
         .floating-call-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            transition: background-color 0.3s;
+            position: fixed; bottom: 85px; right: 20px;
+            background-color: var(--red); color: white;
+            border-radius: 50%; width: 65px; height: 65px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000; text-decoration: none; animation: pulse 2s infinite;
         }
-        .floating-call-button:hover {
-            background-color: #218838;
-        }
-        .floating-call-button a {
-            color: white;
-            text-decoration: none;
-        }
-        .center-image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        .package {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 6px;
-            background-color: #f9f9f9;
-        }
+
+        .header { background: var(--green); color: white; padding: 1.5rem; text-align: center; border-bottom: 5px solid var(--gold); }
+        .logo { max-height: 80px; border-radius: 8px; }
+        .company-name { font-weight: bold; font-size: 1.3em; margin-top: 10px; }
+        .phone-number a { font-weight: bold; font-size: 1.8rem; color: var(--gold); text-decoration: none; }
+        
+        nav.navigation { background: var(--dark); text-align: center; padding: 0.8rem 0; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 8px 15px; }
+        nav a:hover, nav a.active { color: var(--gold); }
+
+        main { max-width: 1100px; margin: auto; padding: 20px; }
+        .specialist-tag { background: var(--dark); color: var(--gold); padding: 5px 15px; display: inline-block; border-radius: 5px; font-weight: bold; margin-bottom: 10px; }
+        
+        .package { border: 2px solid #ddd; padding: 25px; margin: 20px 0; border-radius: 12px; background-color: #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: 0.3s; }
+        .package:hover { border-color: var(--green); transform: translateY(-3px); }
+        .package h4 { color: var(--green); font-size: 1.5rem; margin-top: 0; }
+        
+        .landmark-box { background: #eef6ee; padding: 1.5rem; border-radius: 10px; border: 1px solid #c8e6c9; margin: 2rem 0; }
+        footer { background: var(--dark); color: white; text-align: center; padding: 3rem 1rem; margin-top: 2rem; }
     </style>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCN4VDL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-
     <header class="header">
         <div class="logo-container">
-            <img src="neathimages/logo.png" alt="Company Logo" class="logo">
-            <h1 class="company-name">Welsh Town And Country Pest Services</h1>
+            <img src="neathimages/logo.png" alt="Welsh Town And Country David Subscriptions" class="logo">
+            <div class="company-name">Welsh Town And Country Pest Services</div>
+            <h1>Pest Management Subscriptions in Neath</h1>
         </div>
         <div class="contact-info">
-            <p>Phone: <a href="tel:07375303124">07375 303124</a></p>
-            <p>Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
+            <div class="phone-number">Direct to David: <a href="tel:07375303124">07375 303124</a></div>
         </div>
     </header>
 
     <nav class="navigation">
         <ul>
-            <li><a href="index">Home</a></li>
-            <li><a href="wasp-nest-removal">Wasp Nest Removal</a></li>
+            <li><a href="index">Home Hub</a></li>
+            <li><a href="wasp-nest-removal">Wasp Removal</a></li>
             <li><a href="neath-rodent-control">Rodent Control</a></li>
-            <li><a href="mole-catching">Mole Catching</a></li>
-            <li><a href="pest-management">Subscription Packages</a></li>
+            <li><a href="mole-catching">Mole Trapping</a></li>
+            <li><a href="pest-management" class="active">Subscription Plans</a></li>
             <li><a href="contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2>Pest Management Subscription Packages</h2>
-        <p>Our subscription packages offer routine pest management for homes, farms, and businesses in Neath and surrounding areas. Keep your property pest-free with regular checkups by our professional team.</p>
+        <section style="text-align: center;">
+            <div class="specialist-tag">David: Ex-Pestokil Trained Specialist • Neath Valley Local</div>
+            <h2>David's Pest Management Subscription Packages</h2>
+            <p>One-off call-outs are often reactive. David's subscription plans offer a proactive, fixed-price solution for homes, farms, and businesses in <strong>Neath</strong> and the surrounding valley. Keep your property protected year-round with regular expert intervention.</p>
+        </section>
+
+        <div class="landmark-box">
+            <h3>Protecting Neath's Local Reputation</h3>
+            <p>From businesses near <strong>Victoria Gardens</strong> to farms across the <strong>SA11 corridor</strong>, David provides the documented protection required for modern compliance. Our plans are anchored in <strong>Resolven</strong> to ensure rapid response times for every subscriber.</p>
+        </div>
 
         <section>
-            <h3>Our Subscription Packages</h3>
             <div class="package">
-                <h4>Basic Package - £80/month</h4>
-                <p>One routine visit per month. Covers general pest management including moles, rats, and wasps. Additional visits discounted.</p>
+                <h4>🏠 Domestic Protection - £80/month</h4>
+                <p>Perfect for residential homes. David provides one routine safety inspection per month covering rodents, wasps, and moles. Includes discounted rates for any additional emergency calls.</p>
             </div>
-            <div class="package">
-                <h4>Premium Package - £120/month</h4>
-                <p>One routine visit per month plus emergency call-outs. Comprehensive coverage with follow-up services included.</p>
+            <div class="package" style="border-left: 8px solid var(--red);">
+                <h4>🚜 Commercial & Farm Hub - £120/month</h4>
+                <p>The premium solution for <strong>Red Tractor compliance</strong>. Includes monthly audits, full treatment logs, and emergency call-outs included. David provides the high-level documentation required for food processing and agriculture.</p>
             </div>
         </section>
 
-        <section>
-            <h3>Why Choose Our Packages?</h3>
+        <section style="background: var(--light); padding: 2rem; border-radius: 12px; border-left: 8px solid var(--green);">
+            <h3>Why Neath Property Owners Choose David:</h3>
             <ul>
-                <li>Regular checkups prevent infestations.</li>
-                <li>Cost-effective ongoing pest control.</li>
-                <li>Safe, humane methods for family and livestock.</li>
-                <li>Customized plans for your specific property needs.</li>
-                <li>24/7 emergency support for urgent issues.</li>
+                <li><strong>Prevention First:</strong> David identifies risks before they become infestations.</li>
+                <li><strong>Fixed Costs:</strong> No hidden fees—one monthly payment covers your essentials.</li>
+                <li><strong>Safe & Humane:</strong> Industry-standard methods safe for your family, pets, and livestock.</li>
+                <li><strong>Audit Ready:</strong> Specialist reporting for BRC, FSA, and farm assurance schemes.</li>
+                <li><strong>24/7 Priority:</strong> David's subscribers always move to the front of the queue for emergencies.</li>
             </ul>
         </section>
 
-        <section>
-            <h3>Get Started Today!</h3>
-            <p>Call <strong><a href="tel:07375303124">07375 303124</a></strong> or email <strong><a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></strong> to discuss the best subscription package for your property.</p>
+        <section style="text-align: center; margin: 3rem 0;">
+            <h3>Secure Your Property Today</h3>
+            <p>Call David directly on <strong><a href="tel:07375303124">07375 303124</a></strong> to discuss a tailored plan for your home or business in the Neath Valley.</p>
+            <a href="tel:07375303124" style="background: var(--red); color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block;">Speak to David Now</a>
         </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2025 Welsh Town And Country Pest Services. All rights reserved.</p>
-        <div class="contact-details">
-            <p>Phone: <a href="tel:07375303124">07375 303124</a> | Email: <a href="mailto:info@welshtownandcountry.co.uk">info@welshtownandcountry.co.uk</a></p>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61564861332160"><img src="neathimages/facebook_logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/welshtownandcountry.co.uk/"><img src="neathimages/Instagram_icon.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/welsh-town-and-country-pest-services/"><img src="neathimages/linked-in.jpg" alt="LinkedIn"></a>
-            <a href="https://www.youtube.com/channel/UC1ty_8r3JnreT1uFf5P2hmA"><img src="neathimages/tube-icon.jpg" alt="YouTube"></a>
+    <footer>
+        <p>&copy; 2026 Welsh Town And Country Pest Services. David: Neath Valley Specialist.</p>
+        <p>Direct Access: <a href="tel:07375303124" style="color: var(--gold); text-decoration: none; font-weight: bold;">07375 303124</a></p>
+        <div class="social-icons" style="margin-top: 20px;">
+            <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank"><img src="neathimages/facebook_logo.png" alt="Facebook" width="35" style="margin: 0 10px;"></a>
+            <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank"><img src="neathimages/Instagram_icon.png" alt="Instagram" width="35" style="margin: 0 10px;"></a>
+            <a href="https://www.linkedin.com/in/welsh-town-and-country-pest-services/" target="_blank"><img src="neathimages/linked-in.jpg" alt="LinkedIn" width="35" style="margin: 0 10px;"></a>
         </div>
     </footer>
 
-    <div class="floating-call-button">
-        <a href="tel:07375303124">📞</a>
-    </div>
+    <a href="tel:07375303124" class="floating-call-button" title="Call David Directly">📞</a>
 </body>
 </html>
