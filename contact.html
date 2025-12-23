@@ -10,6 +10,7 @@
     <meta name="geo.placename" content="Neath">
     <meta name="geo.position" content="51.7210854;-3.7953355">
     <link rel="canonical" href="https://neath.welshtownandcountry.co.uk/contact">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="neathstyles/desktop.css">
     <link rel="stylesheet" href="neathstyles/mobile.css" media="only screen and (max-width: 900px)">
     <script>
@@ -41,47 +42,229 @@
     }
     </script>
     <style>
-        :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
-      
+        :root {
+            --green: #0b6623;
+            --dark: #083d14;
+            --red: #d32f2f;
+            --light: #f8f9fa;
+            --gold: #ffcc00;
+            --gray: #f4f4f4;
+            --shadow: rgba(0,0,0,0.1);
+        }
+
         @keyframes pulse {
             0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
             70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(211, 47, 47, 0); }
             100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
         }
-        .pulse-btn {
-            background-color: var(--red); color: white; padding: 15px 30px;
-            border-radius: 50px; text-decoration: none; font-weight: bold;
-            display: inline-block; animation: pulse 2s infinite; border:none; cursor:pointer;
+
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            background: #fdfdfd;
+            color: #222;
+            line-height: 1.6;
         }
+
+        header {
+            background: var(--green);
+            color: white;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        .logo {
+            max-height: 70px;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            margin: 0.5rem 0;
+            font-size: 1.8rem;
+        }
+
+        .phone-big {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .phone-big a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        nav {
+            background: var(--dark);
+            text-align: center;
+            padding: 0.8rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: var(--green);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .specialist-tag {
+            background: var(--dark);
+            color: var(--gold);
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box {
+            background: var(--light);
+            border-left: 5px solid var(--red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .trust-card {
+            background: #f0f7f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #c8e6c9;
+        }
+
+        .town-grid {
+            columns: 3 200px;
+            column-gap: 1.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .town-grid li {
+            background: #f0f7f0;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+            border-radius: 6px;
+            border-left: 3px solid var(--green);
+        }
+
+        form {
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: var(--red);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #b32d0a;
+            transform: translateY(-2px);
+        }
+
+        .sms-note {
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
         .floating-call {
-            position: fixed; bottom: 85px; right: 20px;
-            background-color: var(--red); color: white;
-            border-radius: 50%; width: 65px; height: 65px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 28px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 1001; text-decoration: none; animation: pulse 2s infinite;
+            position: fixed;
+            bottom: 85px;
+            right: 20px;
+            background: var(--red);
+            color: white;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1001;
+            text-decoration: none;
+            animation: pulse 2s infinite;
         }
+
         .mobile-sticky-bar {
-            position: fixed; bottom: 0; width: 100%; background: var(--red);
-            color: #fff; text-align: center; height: 60px; line-height: 60px;
-            font-size: 1.4rem; font-weight: bold; text-decoration: none;
-            z-index: 1000; border-top: 2px solid var(--gold); display: none;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: var(--red);
+            color: #fff;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            z-index: 1000;
+            border-top: 2px solid var(--gold);
+            display: none;
         }
-        .landmark-box {
-            background: #eef6ee; padding: 1.5rem; border-radius: 10px;
-            border: 1px solid #c8e6c9; margin: 2rem 0;
+
+        @media (max-width: 768px) {
+            .mobile-sticky-bar { display: block; }
+            .town-grid { columns: 2 150px; }
         }
-        .grid-global {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 15px; text-align: center; margin-top: 20px;
-        }
-        .grid-item { background: #fff; padding: 10px; border-radius: 8px; border: 1px solid #ddd; }
-        .grid-item a { text-decoration: none; color: var(--dark); font-weight: bold; }
-      
-        .specialist-tag { background: var(--dark); color: var(--gold); padding: 5px 15px; display: inline-block; border-radius: 5px; font-weight: bold; margin-bottom: 10px; }
-        @media (max-width: 768px) { .mobile-sticky-bar { display: block; } }
-        /* Small note for SMS setup */
-        .sms-note {font-size:0.9rem;color:#555;text-align:center;margin-top:10px;}
     </style>
 </head>
 <body>
