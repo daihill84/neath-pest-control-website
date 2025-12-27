@@ -10,8 +10,6 @@
     <meta name="geo.placename" content="Neath">
     <meta name="geo.position" content="51.7210854;-3.7953355">
     <link rel="canonical" href="https://neath.welshtownandcountry.co.uk/contact">
-    <link rel="stylesheet" href="neathstyles/desktop.css">
-    <link rel="stylesheet" href="neathstyles/mobile.css" media="only screen and (max-width: 900px)">
 
     <!-- Google Tag Manager -->
     <script>
@@ -45,10 +43,8 @@
     }
     </script>
 
-    <!-- HubSpot Tracking Code -->
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/147475275.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    <!-- HubSpot Embed Code -->
+    <script src="https://js-eu1.hsforms.net/forms/embed/147475275.js" defer></script>
 
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
@@ -70,12 +66,7 @@
         .grid-global{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px;text-align:center;margin-top:20px}
         .grid-item{background:#fff;padding:10px;border-radius:8px;border:1px solid #ddd}
         .grid-item a{text-decoration:none;color:var(--dark);font-weight:bold}
-        form{background:#f4f4f4;padding:2rem;border-radius:12px;margin:2rem 0;border:1px solid #ddd}
-        label{display:block;margin:1rem 0 .5rem;font-weight:bold}
-        input,textarea{width:100%;padding:.8rem;border:1px solid #ccc;border-radius:6px;box-sizing:border-box}
-        button{background:var(--red);color:white;padding:1rem;border:none;border-radius:50px;font-size:1.2rem;cursor:pointer;width:100%;margin-top:1rem;transition:background .3s,transform .3s}
-        button:hover{background:#b32d0a;transform:translateY(-2px)}
-        .sms-note{font-size:.9rem;color:#555;text-align:center;margin-top:1rem}
+        .contact-form-container{max-width:600px;margin:2rem auto;padding:2rem;background:var(--light);border-radius:12px;border:1px solid #ddd}
         .floating-call{position:fixed;bottom:85px;right:20px;background:var(--red);color:white;border-radius:50%;width:65px;height:65px;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 15px rgba(0,0,0,.3);z-index:1001;text-decoration:none;animation:pulse 2s infinite}
         .mobile-sticky-bar{position:fixed;bottom:0;width:100%;background:var(--red);color:#fff;text-align:center;height:60px;line-height:60px;font-size:1.4rem;font-weight:bold;text-decoration:none;z-index:1000;border-top:2px solid var(--gold);display:none}
         @media (max-width:768px){.mobile-sticky-bar{display:block}}
@@ -113,22 +104,14 @@
             <p>Based right here in <strong>Resolven</strong>, David is perfectly positioned to reach <strong>The Gnoll Country Park</strong>, the historic <strong>Neath Abbey</strong> ruins, and <strong>Skewen</strong> within minutes. We anchor our business in the local valley community to provide the independent accountability national firms can't match.</p>
         </div>
 
+        <div class="contact-form-container">
+            <h3 style="text-align:center;margin-top:0;">Quick Inquiry Form</h3>
+            <!-- HubSpot Form Embed -->
+            <div class="hs-form-frame" data-region="eu1" data-form-id="94a8de31-ad16-486d-8bd8-6fb268575e35" data-portal-id="147475275"></div>
+            <p class="sms-note">Once Zapier is set up, you'll receive an instant SMS alert on 07375 303124 with this enquiry.</p>
+        </div>
+
         <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin:30px 0;">
-            <div>
-                <h3>Quick Inquiry Form</h3>
-                <form action="https://formspree.io/f/xeejplgw" method="POST">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="Full Name" required>
-                    <label for="phone">Your Mobile (for David's rapid reply)</label>
-                    <input type="tel" id="phone" name="phone" placeholder="07xxx xxxxxx" required>
-                    <label for="postcode">Town or Postcode</label>
-                    <input type="text" id="postcode" name="postcode" placeholder="e.g. Glynneath" required>
-                    <label for="message">What pest issue are you facing?</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Describe the noises, sightings or locations..." required></textarea>
-                    <button type="submit">Send Emergency Message to David</button>
-                    <p class="sms-note">Once Zapier is set up, you'll receive an instant SMS alert on 07375 303124.</p>
-                </form>
-            </div>
             <div>
                 <h3>Hub Base & Service Map</h3>
                 <address style="font-style:normal;line-height:2;background:var(--light);padding:20px;border-radius:10px;">
@@ -154,7 +137,7 @@
     </main>
 
     <footer style="background:var(--dark);color:white;text-align:center;padding:3rem 1rem;margin-top:2rem;">
-        <p>© 2026 Welsh Town And Country Pest Services. David: Neath Wales Hub Specialist.</p>
+        <p>© 2026 Welsh Town & Country Pest Services. David: Neath Wales Hub Specialist.</p>
         <p>Direct to Technician: <a href="tel:07375303124" style="color:var(--gold);text-decoration:none;font-weight:bold;">07375 303124</a></p>
         <div style="margin-top:20px;">
             <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank"><img src="neathimages/facebook_logo.png" alt="Facebook" width="35" style="margin:0 10px;"></a>
@@ -163,7 +146,7 @@
         </div>
     </footer>
 
-    <a href="tel:07375303124" class="floating-call" title="Call David Directly">Phone</a>
+    <a href="tel:07375303124" class="floating-call" title="Call David Directly">📞</a>
     <a href="tel:07375303124" class="mobile-sticky-bar">Call David: 07375 303124</a>
 </body>
 </html>
