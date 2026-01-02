@@ -35,6 +35,12 @@
         "latitude": 51.6624,
         "longitude": -3.8016
       },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
       "areaServed": [
         {"@type":"City","name":"Neath"},
         {"@type":"City","name":"Skewen"},
@@ -44,16 +50,15 @@
         {"@type":"City","name":"Cimla"},
         {"@type":"City","name":"Crynant"},
         {"@type":"City","name":"Briton Ferry"}
-      ],
-      "openingHours": "Mo-Su 00:00-23:59"
+      ]
     }
     </script>
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
-        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.6;background:#fff;padding-bottom:60px}
+        body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-line:1.6;background:#fff;padding-bottom:60px}
         header{background:var(--green);color:#fff;padding:1.5rem;text-align:center;border-bottom:5px solid var(--gold)}
-        header img{max-height:70px;border-radius:5px;margin-bottom:10px}
-        nav{background:var(--dark);text-align:center}
+        header img{max-height:70px;width:auto;border-radius:5px;margin-bottom:10px}
+        nav{background:var(--dark);text-align:center;position:sticky;top:0;z-index:1000}
         nav ul{list-style:none;padding:10px;margin:0;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
         nav a{color:#fff;text-decoration:none;font-weight:bold;padding:10px}
         nav a:hover{background:var(--green);color:var(--gold)}
@@ -68,17 +73,21 @@
         .service-grid-global{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;text-align:center;margin-top:20px}
         .grid-item{background:#fff;padding:15px;border-radius:8px;border:1px solid #ddd;border-bottom:4px solid var(--green)}
         .grid-item a{text-decoration:none;color:var(--dark);font-weight:bold;display:block}
-        .specialist-tag{background:var(--dark);color:var(--gold);padding:5px 15px;display:inline-block;border-radius:5px;font-weight:bold;margin-bottom:10px}
+        .specialist-tag{background:var(--dark);color:var(--gold);padding:5px 15px;display
         .comp-table {width:100%; border-collapse:collapse; margin:20px 0; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
         .comp-table th {background:var(--dark); color:white; padding:15px;}
         .comp-table td {padding:12px; border-bottom:1px solid #eee; text-align:center;}
         .check {color:var(--green); font-weight:bold;}
         .cross {color:var(--red); font-weight:bold;}
         .blog-teaser {background:var(--light); border:2px solid var(--green); padding:20px; border-radius:10px; text-align:center; margin:2rem 0;}
+        .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
+        .hub-links a{display:inline-block;background:var(--green);color:#fff;flex-wrap:wrap;padding:12px 25px;margin:10px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
+        .hub-links a:hover{background:var(--dark);transform:translateY(-3px)}
         @media (max-width:768px){.mobile-sticky-bar{display:block}.pulse-btn{font-size:1.4rem;padding:18px 30px}}
     </style>
 </head>
 <body>
+    <div class="sticky-bar">🚨 24/7 Emergency Pest Control Neath SA10 SA11 – Same-Day Response 🚨 Call David: 07375 303124</div>
     <header>
         <img src="/neathimages/logo.png" alt="Welsh Town & Country Pest Services – Neath Hub">
         <h1>Pest Control & Exterminator Neath SA10 SA11</h1>
@@ -96,6 +105,12 @@
         </ul>
     </nav>
     <main>
+        <div class="hub-links">
+            <h3>Our South Wales Regional Network</h3>
+            <a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Powys Hub</a>
+            <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Tydfil Hub</a>
+            <a href="https://www.welshmolecatcher.co.uk/">Welsh Mole Catcher</a>
+        </div>
         <section style="text-align:center;">
             <div class="alert-strip">
                 🚨 WINTER 2026: Skip the NPT council backlog. David provides immediate rat proofing & squirrel removal in Neath. Same-Day Callouts Available.
@@ -167,9 +182,9 @@
         </section>
         <section class="service-grid-global" style="background:#f4f4f4;padding:2rem;margin:2rem 0;border-radius:12px;border-left:8px solid var(--green);">
             <h3 style="grid-column:1/-1;text-align:center;margin-top:0;">Our South Wales Regional Network</h3>
-            <div class="grid-item"><a href="https://brecon.welshtownandcountry.co.uk">Brecon Hub</a></div>
-            <div class="grid-item"><a href="https://merthyr.welshtownandcountry.co.uk">Merthyr Hub</a></div>
-            <div class="grid-item"><a href="https://www.welshmolecatcher.co.uk">Welsh Mole Catcher</a></div>
+            <div class="grid-item"><a href="https://brecon.welshtownandcountry.co.uk/">Brecon & Powys Hub</a></div>
+            <div class="grid-item"><a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Tydfil Hub</a></div>
+            <div class="grid-item"><a href="https://www.welshmolecatcher.co.uk/">Welsh Mole Catcher</a></div>
             <div class="grid-item"><a href="/contact">Contact Neath Hub</a></div>
         </section>
     </main>
@@ -178,7 +193,6 @@
     <footer style="background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;">
         <p>&copy; 2026 Welsh Town & Country Pest Services – Neath Port Talbot</p>
         <p>Direct Line: <a href="tel:+447375303124" style="color:var(--gold);text-decoration:none;font-weight:bold;">07375 303124</a></p>
-       
         <div style="margin:25px 0; border:1px solid #444; padding:15px; border-radius:10px;">
             <p><strong>Google Business Profile & Reviews:</strong></p>
             <p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" style="color:var(--gold); font-size:1.1rem; text-decoration:none;">⭐⭐⭐⭐⭐ View my 5-Star Reviews on Google</a></p>
