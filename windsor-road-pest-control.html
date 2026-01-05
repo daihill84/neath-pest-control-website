@@ -92,6 +92,11 @@
     "postalCode": "SA11",
     "addressCountry": "GB"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.6600,
+    "longitude": -3.8050
+  },
   "areaServed": [
     { "@type": "AdministrativeArea", "name": "Windsor Road, Neath SA11" },
     { "@type": "AdministrativeArea", "name": "Briton Ferry" },
@@ -108,9 +113,10 @@
 
 <style>
 :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
-body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;padding-bottom:80px}
+body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:80px}
 header{background:var(--green);color:#fff;padding:1.5rem;text-align:center;border-bottom:4px solid var(--gold)}
 .logo{max-height:80px;border-radius:8px}
+h1{font-size:2.4rem;margin:0.5rem 0;color:#fff;}
 .phone{font-size:2rem;font-weight:900}
 .phone a{color:var(--gold);text-decoration:none}
 nav{background:var(--dark);padding:.8rem 0}
@@ -118,13 +124,21 @@ nav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;list-style:no
 nav a{color:#fff;padding:10px 15px;font-weight:600;text-decoration:none;border-radius:4px}
 nav a:hover{background:var(--green);color:var(--gold)}
 main{max-width:1100px;margin:2rem auto;padding:0 1.5rem}
-.hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--green);border-radius:12px;text-align:center}
-.big-btn{display:inline-block;background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0}
-.kebab-box{background:#e8f5e9;padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0}
-.railway-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0}
-.map-image{max-width:100%;height:auto;border-radius:12px;border:2px solid var(--green);margin:20px 0}
-footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem}
-footer a{color:var(--gold);text-decoration:none}
+.hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--green);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05);}
+.big-btn{display:inline-block;background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0;animation:pulse 2s infinite;}
+@keyframes pulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{transform:scale(1);box-shadow:0 0 0 15px rgba(211,47,47,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
+.kebab-box{background:#e8f5e9;padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0;}
+.railway-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;text-align:left;}
+.map-image{max-width:100%;height:auto;border-radius:12px;border:2px solid var(--green);margin:20px 0;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+.hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
+.hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
+.local-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px;}
+.local-grid a{display:block;background:var(--green);color:#fff;padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s}
+.local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
+.floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
+footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;}
+footer a{color:var(--gold);text-decoration:none;}
+@media(max-width:768px){h1{font-size:1.9rem}.phone{font-size:1.5rem}nav a{padding:8px 10px;font-size:0.9rem;}}
 </style>
 </head>
 
@@ -136,35 +150,86 @@ footer a{color:var(--gold);text-decoration:none}
 <div class="phone"><a href="tel:+447375303124">📞 07375 303124</a></div>
 </header>
 
+<nav>
+<ul>
+<li><a href="/">Neath Home</a></li>
+<li><a href="/rat-catcher">Rat Control</a></li>
+<li><a href="/mole-catching">Mole Catcher</a></li>
+<li><a href="/wasp-nest-removal">Wasp Removal</a></li>
+<li><a href="/farm-pest-control">Farm Pests</a></li>
+<li><a href="/windsor-road-pest-control" style="background:var(--green);color:var(--gold)">Windsor Road SA11</a></li>
+<li><a href="/contact.html">Contact</a></li>
+</ul>
+</nav>
+
 <main>
+
+<div class="hub-links">
+<strong>Our Network:</strong>
+<a href="https://brecon.welshtownandcountry.co.uk/">Brecon Hub</a> |
+<a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a>
+</div>
 
 <section class="hero">
 <h2>Specialist Pest Control for Kebab Shops & Takeaways – Windsor Road Neath SA11</h2>
-<p>Discreet, unmarked emergency pest control for food businesses. Cockroach treatments, rodent proofing and hygiene compliance with minimal disruption.</p>
-<a href="tel:+447375303124" class="big-btn">📞 Call David Now</a>
+<p>David (ex-Pestokil field technician) provides <strong>discreet, unmarked 24/7 service</strong> tailored for busy food businesses on Windsor Road. Cockroach treatments, rodent proofing & hygiene compliance – minimal disruption to your trading hours.</p>
+<a href="tel:+447375303124" class="big-btn">📞 EMERGENCY CALL-OUT – 07375 303124</a>
 </section>
 
+<div class="gbp-trust">
+<h3>Trusted by Neath Food Businesses</h3>
+<p>5-star service for takeaways & kebab shops across SA11. See reviews from local owners.</p>
+<a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">View Google Reviews →</a>
+</div>
+
 <section class="railway-section">
-<h3>🐀 Rats from the Railway & Canal</h3>
-<p>The canal and railway behind Windsor Road create constant rat pressure. David traces entry routes and installs permanent proofing to stop repeat infestations.</p>
-<img src="/neathimages/windsor-road-pest-control.png" alt="Windsor Road Neath rat pressure map" class="map-image">
+<h3>🐀 Rats Coming from the Railway & Canal Behind Windsor Road</h3>
+<p>Windsor Road businesses are particularly vulnerable to rat infestations due to the <strong>Neath Canal and railway line directly behind the street</strong>. These provide ideal harbourage and food sources for rats, leading to frequent entry into rear yards, bin stores and premises.</p>
+
+<img src="/neathimages/windsor-road-pest-control.png" alt="Map of Windsor Road Neath showing railway line and Neath Canal behind the street – common rat entry routes" class="map-image" loading="lazy">
+
+<p>David specialises in tracing these pathways with HD CCTV surveys and installing permanent barriers (stainless valves & proofing) to stop rats at the source – preventing repeat call-outs common with standard baiting.</p>
+<p>Discreet service perfect for busy takeaways – no disruption to trade.</p>
 </section>
 
 <section class="kebab-box">
 <h3>🔥 Kebab Shop & Takeaway Specialists</h3>
+<p>High-risk food premises need fast, effective control:</p>
 <ul>
-<li>Cockroach gel treatments safe for food areas</li>
-<li>Rat & mouse proofing</li>
-<li>Out-of-hours discreet visits</li>
-<li>Hygiene paperwork for council inspections</li>
+<li>Targeted cockroach gel treatments – safe for food areas</li>
+<li>Rat & mouse proofing around extraction systems & bins</li>
+<li>Discreet out-of-hours visits – no impact on evening trade</li>
+<li>Full hygiene documentation for council inspections</li>
 </ul>
+</section>
+
+<h2 style="text-align:center;">Why Windsor Road Businesses Choose David</h2>
+<div class="local-grid">
+<a href="/rat-catcher">Rat & Mouse Control</a>
+<a href="/wasp-nest-removal">Wasp Removal</a>
+<a href="/farm-pest-control">Farm & Commercial</a>
+<a href="/contact.html">Free Quote</a>
+</div>
+
+<section style="text-align:center;margin:3rem 0;">
+<p><strong>Same-day response for Windsor Road SA11 – no call-out fee</strong></p>
+<a href="tel:+447375303124" class="big-btn">📞 Call David: 07375 303124</a>
 </section>
 
 </main>
 
+<a href="tel:+447375303124" class="floating-call" aria-label="Call David">📞</a>
+
 <footer>
+<div style="margin-bottom: 20px;">
+<strong>Our Network Hubs:</strong>
+<a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a> |
+<a href="https://brecon.welshtownandcountry.co.uk/">Brecon Hub</a> |
+<a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a>
+</div>
 <p><strong>Welsh Town & Country Pest Services – Neath Hub</strong></p>
-<p>© 2026 David | Ex-Pestokil Field Technician | 24/7 Response</p>
+<p>© 2026 David | Ex-Pestokil Field Technician | Fully Insured | 24/7 Response</p>
+<p><a href="https://www.google.com/search?q=Welsh+Town+%26+Country+Pest+Services" target="_blank" rel="noopener">Read Our 5-Star Google Reviews</a></p>
 </footer>
 
 </body>
