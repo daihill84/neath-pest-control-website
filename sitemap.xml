@@ -2,73 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/neath-rodent-control</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/rat-catcher</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/mole-catching</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/wasp-nest-removal</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/sewer-pipe-inspection</loc>
-        <lastmod>2025-12-18</lastmod>
-        <changefreq>monthly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/pest-management</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
+
     <url>
-        <loc>https://neath.welshtownandcountry.co.uk/woodworm</loc>
-        <lastmod>2025-12-18</lastmod>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/briton-ferry-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/cimla-tonna-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/crynant-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/glynneath-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/resolven-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/seven-sisters-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/skewen-pest-control.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
 
     <url>
+        <loc>https://neath.welshtownandcountry.co.uk/sewer-pipe-inspection</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
         <loc>https://neath.welshtownandcountry.co.uk/insect-control</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/bee-removal</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <priority>0.70</priority>
     </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/household-insects-control</loc>
-        <lastmod>2025-12-18</lastmod>
-        <priority>0.70</priority>
-    </url>
-
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/contact</loc>
-        <lastmod>2025-12-18</lastmod>
+        <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
