@@ -1,3 +1,23 @@
+# Robots.txt for Neath Pest Control (David)
+# Updated: 2026-01-16
+
 User-agent: *
 Allow: /
+Allow: /blog
+Allow: /hypapest/
+Allow: /cctv-drain-surveys
+
+# Block crawlers from private or system folders if they exist
+Disallow: /cgi-bin/
+Disallow: /neathimages/*.ico$
+Disallow: /private/
+
+# Specifically encourage Googlebot and Bingbot
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Direct link to your updated sitemap for faster indexing
 Sitemap: https://neath.welshtownandcountry.co.uk/sitemap.xml
