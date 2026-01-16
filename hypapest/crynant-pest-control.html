@@ -15,6 +15,7 @@
     <style>
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
         body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:80px}
+        
         header{background:var(--green);color:#fff;padding:0.8rem 1.5rem;text-align:center;border-bottom:5px solid var(--gold);display:flex;flex-direction:row;justify-content:space-between;align-items:center;flex-wrap:wrap}
         .header-logos{display:flex;align-items:center;gap:15px}
         .logo{max-height:50px;border-radius:4px}
@@ -42,6 +43,10 @@
         .image-container img{max-width:100%;height:auto;border-radius:12px;border:2px solid var(--green)}
         
         .hub-links{background:var(--light);padding:1rem;border-radius:8px;margin:1rem 0;text-align:center;border:1px solid #ddd;font-size:0.9rem}
+        .area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:20px 0}
+        .area-grid a{display:block;background:var(--green);color:#fff;padding:10px;border-radius:6px;font-weight:bold;text-align:center;font-size:0.85rem;text-decoration:none}
+        .area-grid a:hover{background:var(--dark)}
+        
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:30px;z-index:1000;box-shadow:0 4px 10px rgba(0,0,0,0.3)}
         
         footer{background:var(--dark);color:#fff;text-align:center;padding:2rem 1rem}
@@ -88,53 +93,57 @@
         <section class="hero">
             <div class="specialist-tag" style="background:var(--dark); color:var(--gold); padding:5px 15px; display:inline-block; border-radius:5px; font-weight:bold; margin-bottom:10px;">David: Local Dulais Valley Specialist • Ex-Pestokil Trained</div>
             <h2>Fast Response for Crynant Residents</h2>
-            <p>Unwanted pests in Crynant? As a local Ex-Pestokil specialist, I provide rapid, poison-free solutions. From rats in lofts to cluster flies and moles, I am available 24/7.</p>
+            <p>Unwanted pests in Crynant? As a local Ex-Pestokil specialist, I provide rapid, poison-free solutions for homes and farms. From rats in lofts to cluster flies and moles, I am available 24/7 with a discreet service.</p>
             <a href="tel:07375303124" class="cta-btn pulse">CLICK TO CALL DAVID: 07375 303124</a>
         </section>
 
         <div class="image-container">
             <img src="/neathimages/rat-house.jpg" alt="Residential Rat Control Crynant">
-            <p><em>Stopping rats from entering Dulais Valley homes.</em></p>
+            <p><em>Stopping rats from entering Dulais Valley homes and property proofing.</em></p>
         </div>
 
         <section class="usp-box">
             <h3>Specialist Dulais Valley Services</h3>
-            
-            
-
             <ul>
-                <li><strong>Cluster Fly Control:</strong> Massive issue in Crynant—I provide full loft fogging and prevention.</li>
-                <li><strong>Traditional Mole Catching:</strong> Professional, poison-free trapping for gardens and paddocks.</li>
-                
-                <li><strong>Rat & Mouse Eradication:</strong> Permanent proofing to keep rodents out of your home.</li>
-                <li><strong>Wasp & Hornet Nests:</strong> Guaranteed removal from eaves and garden structures.</li>
+                <li><strong>Cluster Fly Control:</strong> A major issue in Crynant—I provide full loft fogging and seasonal prevention.</li>
+                <li><strong>Traditional Mole Catching:</strong> Professional, poison-free trapping for gardens, paddocks, and local farms.</li>
+                <li><strong>Rat & Mouse Eradication:</strong> Permanent proofing to keep rodents out of your living spaces for good.</li>
+                <li><strong>Wasp & Hornet Nests:</strong> Guaranteed removal from eaves, lofts, and garden structures.</li>
             </ul>
             <div style="text-align:center;">
-                <a href="tel:07375303124" class="cta-btn">CALL FOR A FREE QUOTE</a>
+                <a href="tel:07375303124" class="cta-btn">GET A FREE QUOTE</a>
             </div>
         </section>
 
         <div class="image-container">
             <img src="/neathimages/mole-farm.jpg" alt="Farm Pest Management Crynant">
-            <p><em>Protecting rural land and farms in the Dulais Valley.</em></p>
+            <p><em>Protecting rural land and farms in the Dulais Valley with traditional methods.</em></p>
         </div>
 
         <div class="image-container">
             <img src="/neathimages/rat-unit.jpg" alt="Commercial Pest Control Crynant">
-            <p><em>Pest management for Crynant shops and business units.</em></p>
+            <p><em>Discreet pest management for Crynant shops, units, and business premises.</em></p>
             <a href="tel:07375303124" class="cta-btn pulse">EMERGENCY CALL: 07375 303124</a>
         </div>
 
-        <section style="text-align:center;">
-            <h2>Local Service Areas</h2>
-            <p>Covering <strong>Crynant, Seven Sisters, Onllwyn, and Banwen</strong> 24 hours a day.</p>
+        <section style="background:var(--light); padding:2rem 1rem; border-radius:12px; margin:2rem 0;">
+            <h3 style="text-align:center; color:var(--dark);">Local Valley Service Hubs</h3>
+            <div class="area-grid">
+                <a href="/hypapest/briton-ferry-pest-control.html">Briton Ferry</a>
+                <a href="/hypapest/cimla-tonna-pest-control.html">Cimla & Tonna</a>
+                <a href="/hypapest/glynneath-pest-control.html">Glynneath</a>
+                <a href="/hypapest/resolven-pest-control.html">Resolven</a>
+                <a href="/hypapest/crynant-pest-control.html">Crynant</a>
+                <a href="/hypapest/seven-sisters-pest-control.html">Seven Sisters</a>
+            </div>
+            <p style="text-align:center; font-size:0.8rem; margin-top:10px;">Serving Crynant, Seven Sisters, Onllwyn, and Banwen 24/7.</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19833.027091490237!2d-3.759495116743909!3d51.7275269781604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e58f0df81e149%3A0xe5f87b3229b4e05!2sCrynant%2C%20Neath!5e0!3m2!1sen!2suk!4v1705300000000!5m2!1sen!2suk" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
 
     <footer>
         <p><strong>Welsh Town & Country Pest Services</strong></p>
-        <p>© 2026 David | Ex-Pestokil | Fully Insured | 24/7 Response</p>
+        <p>© 2026 David | Ex-Pestokil Specialist | Fully Insured | 24/7 Response</p>
         <div style="margin:15px 0;">
             <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank" style="color:var(--gold); font-size:1.1rem; text-decoration:none;">⭐⭐⭐⭐⭐ View My 5-Star Google Reviews</a>
         </div>
@@ -142,7 +151,7 @@
             <a href="https://www.facebook.com/profile.php?id=61564861332160" target="_blank"><img src="/neathimages/facebook_logo.png" alt="Facebook" width="30" style="margin:0 10px;"></a>
             <a href="https://www.instagram.com/welshtownandcountry.co.uk/" target="_blank"><img src="/neathimages/Instagram_icon.png" alt="Instagram" width="30" style="margin:0 10px;"></a>
         </div>
-        <p style="margin-top:10px;"><a href="tel:07375303124" style="font-size:1.5rem; font-weight:bold;">Call David: 07375 303124</a></p>
+        <p style="margin-top:10px;"><a href="tel:07375303124" style="font-size:1.5rem; font-weight:bold; color:var(--gold); text-decoration:none;">Call David: 07375 303124</a></p>
     </footer>
 
     <a href="tel:07375303124" class="floating-call" title="Call David Directly">📞</a>
