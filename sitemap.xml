@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Root & Core Pages -->
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/</loc>
         <lastmod>2026-01-16</lastmod>
@@ -7,63 +8,13 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://neath.welshtownandcountry.co.uk/blog</loc>
+        <loc>https://neath.welshtownandcountry.co.uk/contact</loc>
         <lastmod>2026-01-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/rat-catcher</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.95</priority>
-    </url>
-
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/resolven-rat-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/glynneath-rat-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/skewen-rat-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/briton-ferry-rat-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/tonna-rat-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/hyparat/crynant-rat-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/neath-rodent-control</loc>
         <lastmod>2026-01-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.95</priority>
@@ -87,18 +38,69 @@
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://neath.welshtownandcountry.co.uk/cctv-drain-surveys</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.90</priority>
-    </url>
-    <url>
         <loc>https://neath.welshtownandcountry.co.uk/pest-management</loc>
         <lastmod>2026-01-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/cctv-drain-surveys</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
 
+    <!-- Rat Specialist Hub & Pages -->
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/resolven-rat-control.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/glynneath-rat-control.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/skewen-rat-control.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/briton-ferry-rat-control.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/tonna-rat-control.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hyparat/crynant-rat-control.html</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <!-- General Pest Hub & Village Pages -->
+    <url>
+        <loc>https://neath.welshtownandcountry.co.uk/hypapest/</loc>
+        <lastmod>2026-01-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/hypapest/briton-ferry-pest-control.html</loc>
         <lastmod>2026-01-16</lastmod>
@@ -137,30 +139,6 @@
     </url>
     <url>
         <loc>https://neath.welshtownandcountry.co.uk/hypapest/skewen-pest-control.html</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/sewer-pipe-inspection</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/insect-control</loc>
-        <lastmod>2026-01-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/bee-removal</loc>
-        <lastmod>2026-01-16</lastmod>
-        <priority>0.70</priority>
-    </url>
-    <url>
-        <loc>https://neath.welshtownandcountry.co.uk/contact</loc>
         <lastmod>2026-01-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
