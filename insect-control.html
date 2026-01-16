@@ -17,7 +17,9 @@
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
         body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:80px}
         header{background:var(--green);color:#fff;padding:1.5rem;text-align:center;border-bottom:5px solid var(--gold)}
+        .header-logos{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:10px}
         .logo{max-height:80px;border-radius:8px}
+        .rsph-top{max-height:70px;background:#fff;padding:5px;border-radius:5px}
         h1{font-size:2.2rem;margin:0.5rem 0;color:#fff}
         h2{color:var(--dark);border-bottom:2px solid var(--gold);padding-bottom:10px}
         .phone{font-size:2rem;font-weight:900}
@@ -35,19 +37,21 @@
         .image-container img{max-width:100%;height:auto;border-radius:12px;border:2px solid var(--green);box-shadow:0 4px 15px rgba(0,0,0,0.1)}
         .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
         .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
-        .certification-badge{width:150px;margin:20px 0}
+        .footer-badge{max-height:60px;background:#fff;padding:5px;border-radius:5px;margin-bottom:15px}
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:30px;box-shadow:2px 2px 10px rgba(0,0,0,0.3);z-index:1000;animation:pulse 2s infinite}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem}
-        footer a{color:var(--gold);text-decoration:none}
         .village-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:20px}
-        .village-tag{background:#eee;padding:10px;border-radius:5px;font-size:0.9rem;font-weight:bold}
+        .village-tag{background:#eee;padding:10px;border-radius:5px;font-size:0.9rem;font-weight:bold;color:var(--dark)}
     </style>
 </head>
 
 <body>
 
     <header>
-        <img src="/neathimages/logo.png" alt="Welsh Town & Country Pest Services Neath" class="logo">
+        <div class="header-logos">
+            <img src="/neathimages/logo.png" alt="Welsh Town & Country Pest Services Neath" class="logo">
+            <img src="/neathimages/rsph-cert-badge.png" alt="RSPH Certified" class="rsph-top">
+        </div>
         <h1>Insect Control Neath Valley</h1>
         <div class="phone"><a href="tel:07375303124">07375 303124</a></div>
     </header>
@@ -66,15 +70,14 @@
     <main>
         <div class="hub-links">
             <strong>Direct Links:</strong> 
-            <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a> | 
-            <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank">View Our Google Business Profile</a>
+            <a href="/">Neath Hub</a> | 
+            <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank">⭐⭐⭐⭐⭐ View My Google Business Profile</a>
         </div>
 
         <section class="hero">
-            <div style="background:var(--dark); color:var(--gold); padding:5px 15px; display:inline-block; border-radius:5px; font-weight:bold; margin-bottom:10px;">David: Ex-Pestokil Trained Specialist • SA11 Local</div>
+            <div style="background:var(--dark); color:var(--gold); padding:5px 15px; display:inline-block; border-radius:5px; font-weight:bold; margin-bottom:10px;">David: Ex-Pestokil Specialist • SA11 Local</div>
             <h2>Professional Bed Bug, Flea & Ant Treatments</h2>
-            <p>Don't let biting insects take over your home. David provides expert insecticide treatments and heat-based advice for residential and commercial properties across Neath and Port Talbot.</p>
-            <img src="/neathimages/rsph-cert-badge.png" alt="RSPH Certified Pest Control" class="certification-badge">
+            <p>Don't let biting insects take over your home. David provides expert insecticide treatments and thermal advice for residential and commercial properties across Neath and Port Talbot.</p>
             <a href="tel:07375303124" class="big-btn">📞 CALL DAVID: 07375 303124</a>
         </section>
 
@@ -85,26 +88,27 @@
 
         <section class="usp-box">
             <h3>Specialist Insect Services:</h3>
+            
             <ul>
-                <li><strong>Bed Bug Eradication:</strong> Professional deep-clean and chemical treatments for bedrooms.</li>
-                <li><strong>Flea Control:</strong> Fast-acting solutions for pet-related infestations in carpets and furniture.</li>
-                <li><strong>Ant Control:</strong> Targeting nests to stop seasonal invasions in kitchens.</li>
-                <li><strong>Cluster Fly Removal:</strong> Specialist loft treatments for rural Neath Valley properties.</li>
+                <li><strong>Bed Bug Eradication:</strong> Professional deep-clean and residual insecticide treatments for bedrooms.</li>
+                <li><strong>Flea Control:</strong> Fast-acting solutions for pet-related infestations in carpets and upholstered furniture.</li>
+                <li><strong>Ant Control:</strong> Targeting hidden nests to stop seasonal invasions in kitchens and conservatories.</li>
+                <li><strong>Cluster Fly Removal:</strong> specialist loft fogging treatments for rural Neath Valley properties.</li>
             </ul>
         </section>
 
         <div class="image-container">
             <img src="/neathimages/rat-unit.jpg" alt="Commercial Insect Control Neath">
-            <p><em>Cockroach and fly management for Neath food businesses and takeaways.</em></p>
+            <p><em>Cockroach and fly management for Neath food businesses, cafes, and takeaways.</em></p>
         </div>
 
         <div class="image-container">
             <img src="/neathimages/mole-farm.jpg" alt="Rural Insect Control Neath Valley">
-            <p><em>Managing seasonal flies and biting insects for farms and stables.</em></p>
+            <p><em>Managing seasonal flies and biting insects for agricultural buildings and stables.</em></p>
         </div>
 
         <section style="background:var(--light); padding:2rem; border-radius:12px; margin:2rem 0;">
-            <h3>Serving These 10 Villages Daily:</h3>
+            <h3>Serving These Villages Daily:</h3>
             <div class="village-grid">
                 <div class="village-tag">Resolven (Base)</div>
                 <div class="village-tag">Skewen</div>
@@ -120,16 +124,17 @@
         </section>
 
         <section style="text-align:center;">
-            <h2>Locate Your Local Specialist</h2>
-            <iframe src="https://www.google.com/maps?cid=YOUR_GBP_ID_HERE7" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+            <h2>Local Service Mapping</h2>
+            <iframe src="https://www.google.com/maps?cid=YOUR_GBP_ID_HERE7" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
     <footer>
+        <img src="/neathimages/rsph-cert-badge.png" alt="RSPH Certified Badge" class="footer-badge">
         <p><strong>Welsh Town & Country Pest Services – Insect Specialist</strong></p>
         <p>© 2026 David | Ex-Pestokil Specialist | Fully Insured | 24/7 Response</p>
         <div style="margin-top:15px;">
-            <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank" style="color:var(--gold);">⭐⭐⭐⭐⭐ View My Google Reviews</a>
+            <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank" style="color:var(--gold); text-decoration:none;">⭐⭐⭐⭐⭐ View My Google Business Profile & Reviews</a>
         </div>
     </footer>
 
