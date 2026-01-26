@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pest Control Windsor Road Neath SA11 | Kebab Shop & Takeaway Specialists</title>
-    <meta name="description" content="Specialist pest control for kebab shops & takeaways on Windsor Road Neath SA11. David (ex-Pestokil specialist) provides discreet 24/7 service – cockroach treatments, rodent proofing & hygiene compliance. Call 07375 303124.">
-    <meta name="keywords" content="pest control Windsor Road Neath, kebab shop pest control Neath, takeaway pest control SA11, cockroach control Windsor Road, rat proofing Neath takeaways, pest control for food businesses Neath, emergency pest control kebab shop Neath">
+    <title>Pest Control Windsor Road Neath SA11 | Free Inspection & Kebab Shop Specialists</title>
+    <meta name="description" content="Get a Free Initial Inspection & Setup for takeaways on Windsor Road Neath SA11. David (ex-Pestokil specialist) provides discreet 24/7 service – cockroach treatments, rodent proofing & hygiene compliance. Call 07375 303124.">
+    <meta name="keywords" content="pest control Windsor Road Neath, kebab shop pest control Neath, takeaway pest control SA11, cockroach control Windsor Road, rat proofing Neath takeaways, free pest inspection Neath, emergency pest control kebab shop Neath, food safety compliance SA11">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="GB-WLS">
     <meta name="geo.placename" content="Windsor Road, Neath">
@@ -37,41 +37,50 @@
         :root{--green:#0b6623;--dark:#083d14;--red:#d32f2f;--light:#f8f9fa;--gold:#ffcc00}
         body{font-family:'Segoe UI',Tahoma,sans-serif;margin:0;color:#222;line-height:1.7;background:#fff;padding-bottom:80px}
         header{background:var(--green);color:#fff;padding:1.5rem;text-align:center;border-bottom:4px solid var(--gold)}
+        .logo-area{display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap;}
         .logo{max-height:80px;border-radius:8px}
-        h1{font-size:2.4rem;margin:0.5rem 0;color:#fff;}
+        .rsph-badge-top{max-height:70px; background:#fff; padding:5px; border-radius:5px;}
+        h1{font-size:2.2rem;margin:0.5rem 0;color:#fff;}
         .phone{font-size:2rem;font-weight:900}
-        .phone a{color:var(--gold);text-decoration:none}
-        nav{background:var(--dark);padding:.8rem 0}
+        .phone a{color:var(--gold);text-decoration:none; border: 2px dashed var(--gold); padding: 5px 15px; border-radius: 10px;}
+        nav{background:var(--dark);padding:.8rem 0; position:sticky; top:0; z-index:1000;}
         nav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;list-style:none;margin:0;padding:0}
         nav a{color:#fff;padding:10px 15px;font-weight:600;text-decoration:none;border-radius:4px}
         nav a:hover{background:var(--green);color:var(--gold)}
         main{max-width:1100px;margin:2rem auto;padding:0 1.5rem}
         .hero{background:var(--light);padding:2.5rem;border-left:12px solid var(--green);border-radius:12px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.05);}
+        .offer-box{background:var(--gold); color:var(--dark); padding:20px; border-radius:10px; font-weight:bold; font-size:1.3rem; margin:20px 0; border:2px solid var(--dark);}
         .big-btn{display:inline-block;background:var(--red);color:#fff;padding:20px 50px;border-radius:50px;font-size:1.5rem;font-weight:bold;text-decoration:none;margin:2rem 0;animation:pulse 2s infinite;}
         @keyframes pulse{0%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0.7)}70%{transform:scale(1);box-shadow:0 0 0 15px rgba(211,47,47,0)}100%{transform:scale(0.95);box-shadow:0 0 0 0 rgba(211,47,47,0)}}
         .kebab-box{background:#e8f5e9;padding:30px;border:2px solid var(--green);border-radius:12px;margin:40px 0;}
         .railway-section{background:#fff3f3;padding:30px;border:2px solid var(--red);border-radius:12px;margin:40px 0;}
-        .image-container{text-align:center;margin:2rem 0}
-        .image-container img{max-width:100%;height:auto;border-radius:12px;border:2px solid var(--green);box-shadow:0 4px 15px rgba(0,0,0,0.1)}
-        .certification-badge{width:150px;margin:20px auto;display:block}
+        .content-section{margin:40px 0; font-size:1.1rem;}
+        .image-container{text-align:center;margin:2.5rem 0}
+        .image-container img{max-width:100%;height:auto;border-radius:12px;border:3px solid var(--green);box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+        .certification-badge{width:160px;margin:20px auto;display:block; background:#fff; padding:10px; border-radius:10px;}
         .hub-links{background:var(--light);padding:1.5rem;border-radius:12px;margin:2rem 0;text-align:center;border:1px solid #ddd}
         .hub-links a{color:var(--green);font-weight:bold;text-decoration:none;margin:0 10px}
+        .map-container{width:100%; height:450px; border-radius:12px; overflow:hidden; border:4px solid var(--green); margin:3rem 0;}
         .local-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:15px;}
         .local-grid a{display:block;background:var(--green);color:#fff;padding:12px;border-radius:8px;font-weight:bold;text-decoration:none;transition:0.3s;text-align:center;}
         .local-grid a:hover{background:var(--dark);transform:translateY(-3px)}
         .floating-call{position:fixed;bottom:20px;right:20px;background:var(--red);color:#fff;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;text-decoration:none;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.3);}
         footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 1rem;}
         footer a{color:var(--gold);text-decoration:none;}
-        .hs-form-section{background:var(--light);padding:3rem;border-radius:12px;margin:3rem 0;text-align:center;}
-        @media(max-width:768px){h1{font-size:1.9rem}.phone{font-size:1.5rem}nav a{padding:8px 10px;font-size:0.9rem;}}
+        .hs-form-section{background:var(--light);padding:3rem;border-radius:12px;margin:3rem 0;text-align:center; border: 1px solid #ddd;}
+        @media(max-width:768px){h1{font-size:1.7rem}.phone{font-size:1.4rem}nav a{padding:8px 10px;font-size:0.85rem;}}
     </style>
 </head>
 <body>
 <header>
-    <img src="/neathimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
+    <div class="logo-area">
+        <img src="/neathimages/logo.png" alt="Welsh Town & Country Pest Services Logo" class="logo">
+        <img src="/neathimages/rsph-cert-badge.png" alt="RSPH Certified" class="rsph-badge-top">
+    </div>
     <h1>Pest Control Windsor Road Neath SA11</h1>
-    <div class="phone"><a href="tel:+447375303124">📞 07375 303124</a></div>
+    <div class="phone"><a href="tel:+447375303124">07375 303124</a></div>
 </header>
+
 <nav>
     <ul>
         <li><a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a></li>
@@ -82,51 +91,84 @@
         <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>
+
 <main>
     <div class="hub-links">
         <strong>Our Regional Network:</strong>
         <a href="https://neath.welshtownandcountry.co.uk/">Neath Hub</a> | 
-        <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank">⭐⭐⭐⭐⭐ View My Google Business Profile (GBP)</a>
+        <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank">⭐⭐⭐⭐⭐ View My Google Business Profile & Reviews</a>
     </div>
 
     <section class="hero">
-        <h2>Confidential Pest Control for Kebab Shops & Takeaways</h2>
-        <p>David (Ex-Pestokil specialist) provides <strong>discreet, unmarked 24/7 service</strong> tailored for busy food businesses on Windsor Road. Cockroach treatments, rodent proofing & hygiene compliance with minimal disruption.</p>
+        <h2>Discreet Pest Protection for Kebab Shops & Takeaways</h2>
+        
+        <div class="offer-box">
+            🔥 SPECIAL OFFER: Free Initial Inspection & Setup with every Monthly Routine Contract!
+        </div>
+
+        <p>David (Ex-Pestokil specialist) provides <strong>discreet, unmarked 24/7 service</strong> tailored for busy food businesses on Windsor Road. We focus on high-speed eradication and long-term prevention to safeguard your 5-star hygiene rating.</p>
         <img src="/neathimages/rsph-cert-badge.png" alt="RSPH Level 2 Certified Pest Control David" class="certification-badge">
-        <a href="tel:+447375303124" class="big-btn">📞 EMERGENCY CALL-OUT – 07375 303124</a>
+        <a href="tel:+447375303124" class="big-btn">📞 EMERGENCY CALL-OUT: 07375 303124</a>
     </section>
+
+    <article class="content-section">
+        <h3>Why Windsor Road Takeaways Face Unique Pest Pressures</h3>
+        <p>Windsor Road is the heartbeat of Neath's evening food economy, but its geography creates significant pest risks. The combination of historic terrace structures, shared basement voids, and proximity to major infrastructure makes it a prime target for rodents and insects. For a kebab shop or Chinese takeaway, a single sighting can be catastrophic for business reputation.</p>
+        <p>At Welsh Town & Country Pest Services, we don't just "put down traps." We provide a comprehensive management system. Because I am an ex-Pestokil specialist, I bring big-company technical expertise with the personal, discreet service of a local business. I understand that Windsor Road owners need zero public visibility—which is why I always arrive in an <strong>unmarked vehicle</strong>.</p>
+    </article>
 
     <section class="railway-section">
-        <h3>🐀 Rats from the Railway & Neath Canal</h3>
-        <p>Properties near Windsor Road and the station are particularly vulnerable to rat activity due to the proximity of the railway lines and Neath Canal. These areas act as "rodent highways."</p>
-        <div class="image-container">
-            <img src="/neathimages/rat-unit.jpg" alt="Commercial Pest Control Neath Windsor Road Business Protection">
-            <p><em>Discreet commercial pest management for SA11 takeaways.</em></p>
-        </div>
-        <p>I specialise in finding the exact entry points using HD CCTV drain surveys and stopping rats before they reach your kitchen or storage areas.</p>
-    </section>
-
-    <section class="kebab-box">
-        <h3>🔥 Specialist Food Premises Support</h3>
-        <p>High-risk food premises on Windsor Road require fast, effective control to maintain hygiene ratings:</p>
-        <ul>
-            <li><strong>Targeted Cockroach Gel:</strong> Advanced treatments safe for food-prep areas.</li>
-            <li><strong>Proofing:</strong> Sealing extraction systems and bin stores against rodents.</li>
-            <li><strong>Discreet Visits:</strong> Unmarked vehicles and out-of-hours appointments.</li>
-            <li><strong>Compliance:</strong> Full documentation provided for council health inspections.</li>
-        </ul>
+        <h3>🐀 Rats from the Railway, Station & Neath Canal</h3>
+        <p>Properties on Windsor Road and near the Neath Station are particularly vulnerable. Railway embankments and the nearby Neath Canal act as "rodent highways," allowing rats to travel undetected before entering buildings through aging sewer pipes or small structural gaps.</p>
         
+        <div class="image-container">
+            <img src="/neathimages/rat-unit.jpg" alt="Commercial Pest Control Neath Windsor Road Takeaway Protection">
+            <p><em>Discreet commercial pest management for SA11 takeaways and kebab shops.</em></p>
+        </div>
+
+        <p>My solution involves <strong>HD CCTV Drain Surveys</strong>. Often, rats enter Windsor Road shops via displaced joints in old clay pipes. By identifying these faults, I can install stainless steel rat blockers that stop the problem at the source, rather than just treating the symptoms with bait.</p>
     </section>
 
     <div class="image-container">
         <img src="/neathimages/rat-house.jpg" alt="Residential Rat Catcher Windsor Road Neath">
-        <p><em>Residential rat and pest removal for homes near Windsor Road.</em></p>
+        <p><em>High-level rat proofing for commercial and residential properties in Neath.</em></p>
     </div>
 
+    <article class="content-section">
+        <h3>Cockroach Eradication & Kitchen Hygiene</h3>
+        <p>In the high-heat environment of a commercial kitchen, German Cockroaches can go from a single egg case to a full-blown infestation in weeks. They hide behind fryers, inside motor housings of refrigerators, and within wall voids. I use professional-grade gel baits that are safe for food-prep environments but lethal to cockroach colonies.</p>
+        <p>Compliance is key for any Windsor Road food business. My monthly routine contracts include a professional site folder that is <strong>audit-ready</strong> for Environmental Health Officers (EHO). When an inspector walks through your door, you can confidently present your treatment records, risk assessments, and hygiene recommendations, proving you are proactive about pest management.</p>
+    </article>
+
+    <section class="kebab-box">
+        <h3>🔥 Specialist Food Premises Support - Windsor Road</h3>
+        <p>I provide a 24/7 rapid response for high-risk premises to ensure you stay open and compliant:</p>
+        <ul>
+            <li><strong>Monthly Contracts:</strong> Includes a <strong>Free Initial Inspection & Setup</strong> for all new SA11 clients.</li>
+            <li><strong>Cockroach Gel Treatments:</strong> Targeted, non-spray applications safe for kitchens.</li>
+            <li><strong>Rodent Proofing:</strong> Permanent sealing of extraction points and rear bin stores.</li>
+            <li><strong>Discreet Visits:</strong> Unmarked vans and out-of-hours appointments to protect your brand.</li>
+            <li><strong>Fly Control:</strong> Supply and maintenance of electric fly killers (EFKs).</li>
+        </ul>
+    </section>
+
+    <article class="content-section">
+        <h3>Protecting Your 5-Star Hygiene Rating</h3>
+        <p>The Food Standards Agency ratings are public and powerful. A drop to a 1 or 2-star rating due to pest activity can lead to an immediate loss of revenue. My goal is to ensure you maintain a 5-star rating. This involves regular monitoring, early detection, and educating staff on pest-awareness. With my <strong>Free Inspection and Setup</strong> offer, I perform a full structural audit to find the weaknesses in your building before a pest does.</p>
+    </article>
+
+    <section style="text-align:center; padding: 2rem; background: var(--agri-bg); border-radius: 12px; margin: 30px 0;">
+        <h3>Farm & Rural Pest Management</h3>
+        <img src="/neathimages/mole-farm.jpg" alt="Farm and field pest management Neath" style="max-width:400px; width:100%; border-radius:10px; border: 3px solid var(--green);">
+        <p>Beyond the high street, I also support rural businesses and farms with specialist mole catching and rat control.</p>
+    </section>
+
     <section style="text-align:center; margin:40px 0;">
-        <h2>Windsor Road Service Coverage</h2>
-        <p>Rapid 24/7 response for all shops, takeaways, and residents near the Neath Station area.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158763.5857211516!2d-3.953589!3d51.660855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e41785566f199%3A0x6a0f443577d61234!2sNeath!5e0!3m2!1sen!2suk!4v1705362400000!5m2!1sen!2suk" width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2>Windsor Road Service Area Map</h2>
+        <p>Providing rapid 24/7 response for all shops, takeaways, and residents near Neath Station and Windsor Road.</p>
+        <div class="map-container">
+            <iframe src="http://googleusercontent.com/maps.google.com/6" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 
     <section class="local-grid">
@@ -140,8 +182,8 @@
     </section>
 
     <section class="hs-form-section">
-        <h3>Confidential Site Survey</h3>
-        <p>For kebab shop owners and residents – request a callback for a free, discreet quote.</p>
+        <h3>Request a Confidential Quote</h3>
+        <p>For kebab shop owners, takeaways, and residents – request a callback for a free, discreet site survey. <strong>Remember: Free Setup on all new monthly contracts!</strong></p>
         <div class="hs-form-frame" data-region="eu1" data-form-id="ce3ce8b7-cf4d-4284-a113-8ebf28230b1e" data-portal-id="147534916"></div>
     </section>
 </main>
@@ -154,10 +196,10 @@
         <a href="https://merthyr.welshtownandcountry.co.uk/">Merthyr Hub</a>
     </div>
     <p><strong>Welsh Town & Country Pest Services – Windsor Road Specialist</strong></p>
-    <p>© 2026 David | Ex-Pestokil Specialist | RSPH Level 2 | 24/7 Response</p>
+    <p>© 2026 David | Ex-Pestokil Specialist | RSPH Level 2 | 24/7 Emergency Response</p>
     <div style="margin-top:15px; border:1px solid #444; padding:15px; border-radius:8px; display:inline-block;">
-        <p><strong>Google Business Profile:</strong></p>
-        <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank" style="color:var(--gold); font-size:1.1rem; font-weight:bold; text-decoration:none;">⭐⭐⭐⭐⭐ Click to View My 5-Star Reviews</a>
+        <p><strong>Google Business Profile & Reviews:</strong></p>
+        <a href="https://share.google/UJnKEKawwLbEfSeLN" target="_blank" style="color:var(--gold); font-size:1.1rem; font-weight:bold; text-decoration:none;">⭐⭐⭐⭐⭐ Click to View My Reviews & GBP Profile</a>
     </div>
 </footer>
 
